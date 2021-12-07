@@ -5,7 +5,10 @@ layout: default
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    {{ page.date | date: "%B %e, %Y" }}
+    {% if page.updated %}
+      (Updated {{ page.updated | date: "%B %e, %Y" }})
+    {% endif %}
     <!--
     <br>
     Categories: 
