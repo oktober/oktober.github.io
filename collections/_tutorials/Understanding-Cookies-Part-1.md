@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding Cookies - Part 1
+title: Part 1 - Why We Use Cookies
 order: 1
 tags: understanding-cookies
 description: Cookies are complicated, but still commonly used for keeping users logged in to a site. Learn a little more about the nuances behind setting cookies and what you're really doing when you set that attribute.
@@ -68,4 +68,4 @@ This is why we must try to protect our cookies and as developers, why we must pr
 
 ---
 
-**_Coming Soon:_ Part 2 - Cookie Defaults**
+**_Next:_** Read [Part 2 - Cookie Default Behavior]({% link _tutorials/Understanding-Cookies-Part-2.md %})
