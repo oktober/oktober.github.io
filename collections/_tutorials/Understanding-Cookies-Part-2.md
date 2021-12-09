@@ -37,4 +37,4 @@ If you set a cookie like this, with no attributes, it will:
 
 ---
 
-**_Coming Soon:_ Part 3 - Cookie Attributes: `Expires` and `Max-Age`**
+**_Next:_** Read [Part 3 - Cookie Attributes: `Expires` and `Max-Age`]({% link _tutorials/Understanding-Cookies-Part-3.md %})
