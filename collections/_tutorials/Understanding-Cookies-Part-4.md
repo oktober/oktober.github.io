@@ -40,7 +40,7 @@ If you want the cookie to be sent to a specific subdomain, such as `blog.example
 Set-Cookie: cookieName=cookieValue; Domain=blog.example.com;
 ```
 
-### Security Concerns
+### Security concerns
 
 **Warning!** Subdomains are an attack vector and should not be implicitly trusted. By setting the `Domain` value, you are making your cookie less secure.
 
