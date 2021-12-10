@@ -282,10 +282,15 @@ hr {
   border: 1px solid #000;
   float: right;
   margin: 0 0 1rem 1rem;
+  max-width: 35%;
   padding: 1rem;
 
   ul {
     list-style: none;
+
+    li {
+      margin: .5rem 0 0 0;
+    }
   }
 }
 
