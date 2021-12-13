@@ -91,4 +91,4 @@ The browser will just ignore your cookie and not store it. Why? Because `yahoo.c
 
 ---
 
-**_Coming Soon:_ Part 5 - Cookie Attribute: Path**
+**_Next:_** Read [Part 5 - Cookie Attribute: Path]({% link _tutorials/Understanding-Cookies-Part-5.md %})
