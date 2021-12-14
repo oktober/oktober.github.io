@@ -26,7 +26,7 @@ If you want the browser to share your cookie with a specific domain and all of i
 Set-Cookie: cookieName=cookieValue; Domain=example.com;
 ```
 
-In this example, the browser will attach the cookie to all requests for `example.com` and its subdomains, such as:
+In this example, we set the cookie from `example.com`. The browser will now attach the cookie to all requests for `example.com` and its subdomains, such as:
 
 - `blog.example.com`
 - `admin.example.com`
@@ -34,7 +34,7 @@ In this example, the browser will attach the cookie to all requests for `example
 
 **_Note:_** Setting the attribute as `domain=example.com` or `domain=.example.com` is considered identical and acts the same.
 
-If you want the cookie to be sent to a specific subdomain, such as `blog.example.com`, and all of its subdomains, (like `test.blog.example.com`), you would set it like this:
+Now, if you wanted the cookie to be sent to a specific subdomain instead, such as `blog.example.com`, and all of its subdomains, (like `test.blog.example.com`), you would set it like this:
 
 ```
 Set-Cookie: cookieName=cookieValue; Domain=blog.example.com;
@@ -61,11 +61,13 @@ If you'd like to keep your cookies more secure and prevent them from being share
 
 ### Can I set the domain from a subdomain to a higher level domain?
 
-Not directly, because the site you are specifying (the other, non-inherited subdomain) does not include the origin server.
+For example, can I set `Domain=account.example.com` from `login.example.com`?
+
+No, because the site you are specifying (`account.example.com`) does not include the origin server.
 
 **What's an origin server?**
 
-The [origin server](https://developer.mozilla.org/en-US/docs/Glossary/Origin){:target="_blank"} is the scheme (protocol), hostname (domain), and port of the URL this request came from.
+The [origin server](https://developer.mozilla.org/en-US/docs/Glossary/Origin){:target="_blank"} is the scheme (protocol), hostname (domain), and port of the URL this request was sent to.
 
 You can't set the `Domain` for a different subdomain from a non-inherited subdomain because they do not share an origin.
 
@@ -75,7 +77,7 @@ But you want to set the cookie so it can only be used on a different subdomain -
 
 If you were to set `Domain=account.example.com`, the browser would just ignore the cookie and not store it. Why? Because `account.example.com` is not included in the origin server - `https://login.example.com:443`.
 
-You'd have to set `Domain=example.com` first, then it can be accessed by ALL the subdomains of that site, which is a potential security risk. But you can't directly set the `Domain` for a subdomain from a different, non-inherited subdomain.
+You'd have to set `Domain=example.com`, then it can be accessed by ALL the subdomains of that site, which is a potential security risk. But you can't directly set the `Domain` for a subdomain from a different subdomain.
 
 ### Can I set a cookie for someone else's domain?
 
