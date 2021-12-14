@@ -85,4 +85,4 @@ To prevent this attack, you'd need to add the `HttpOnly` attribute to your cooki
 
 ---
 
-**_Coming Soon:_ Part 6 - Cookie Attributes: `Secure` and `HttpOnly`**
+**_Next:_** Read [Part 6 - Cookie Attributes: `Secure` and `HttpOnly`]({% link _tutorials/Understanding-Cookies-Part-6.md %})
