@@ -112,6 +112,18 @@ hr {
   color: $lightGray;
 }
 
+table, th, td {
+  border: 1px solid $darkGray;
+}
+
+th, td {
+  padding: 0.5rem 1.5rem;
+}
+
+th {
+  font-weight: 700;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
