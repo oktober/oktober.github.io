@@ -66,4 +66,4 @@ Cookies can be modified by a user or by a malicious actor in transit. For this r
 
 ---
 
-**_Coming Soon:_ Part 7 - Cookie Attribute: `SameSite`**
+**_Next:_** Read [Part 7 - Cookie Attribute: `SameSite`]({% link _tutorials/Understanding-Cookies-Part-7.md %})
