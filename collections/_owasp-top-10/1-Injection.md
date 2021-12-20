@@ -18,6 +18,8 @@ We're going to dive into the first vulnerability on that list - Injection.
 
 <!--more-->
 
+{% include toc.md %}
+
 ---
 
 _All examples of potential attacks in this article are for demonstration and educational purposes only. They should never be used outside of a lab environment or to harm other computers, users, etc._
@@ -34,9 +36,13 @@ The code gets the username and password - from the user - and uses those values 
 
 Depending on how the code is written, the server receiving the login request doesn't know which stuff is from the user and which is code written by the developer, so **it all gets run as legitimate code**.
 
+---
+
 ## How Likely Is It?
 
 Luckily, **injection is not as common as it used to be**. Most developers are trained to use more secure practices nowadays, but it can still happen. Often you'll find injection risks in legacy code or software that builds the queries for the developer. Even though it's not as common, **it's still a threat and a big one at that**.
+
+---
 
 ## How Bad Is It?
 
@@ -48,6 +54,8 @@ If your code is unlucky enough to be vulnerable to injection, **malicious actors
 - They can even use injection to gain a foothold in your system and from there  infiltrate your entire network
 
 So even though injection vulnerabilities are not as common *([OWASP rates their prevalence at a 2](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection){:target="_blank"})*, **they have not completely disappeared and the potential impact of one can be very severe**.
+
+---
 
 ## How Do Attackers Get In?
 
@@ -67,6 +75,8 @@ Unfortunately, this means there are lots of ways attackers can get in.
 To understand the basic idea behind injection and how you can prevent it, we're going to show a very basic example using SQL. 
 
 After that we'll briefly discuss NoSQL injection. Then we'll touch on the other 4 areas it commonly occurs (LDAP, XPath, OS commands, and SMTP headers). Each section will contain links to additional sources for you to learn more.
+
+---
 
 ## SQL Injection (aka SQLi)
 
@@ -187,7 +197,7 @@ Granted, this is one very simple way to inject code into a very basic, unprotect
 
 **When you get data from users (or anywhere outside your own code), assume it's malicious**. Because I guarantee that someone, somewhere, will try to use it maliciously.
 
-#### Further Reading:
+#### Further Reading
 - [OWASP - SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection){:target="_blank"}
 
 ### Possible Ways To Help Prevent SQL Injection
@@ -213,7 +223,7 @@ This might be your only option if you have a large legacy system and it's not wo
 
 If this is your only option, check out the [OWASP ESAPI](https://owasp.org/www-project-enterprise-security-api/){:target="_blank"} as a more secure alternative.
 
-#### Further Reading:
+#### Further Reading
 - [How can prepared statements protect from SQL injection attacks? - via StackOverflow](https://stackoverflow.com/questions/8263371/how-can-prepared-statements-protect-from-sql-injection-attacks){:target="_blank"}
 - [Bobby Tables - A guide to preventing SQL injection](https://bobby-tables.com/){:target="_blank"}
 
@@ -228,7 +238,7 @@ If the input is not properly handled, malicious attackers can run code on your s
 
 We won't go into detail on all the other types of injection, but we will offer a brief explanation and resources for you to learn more.
 
-## NoSQL Injection
+### NoSQL Injection
 NoSQL databases don't mean "No SQL". **NoSQL means they are a non-relational database**. There are many types of NoSQL databases to choose from and they're all different.
 
 Like relational ones, NoSQL databases each use some type of query language. If the query is dynamically created from user-supplied input *(like getting the username and password from the user before logging in)*, it could still be vulnerable to injection.
@@ -240,7 +250,7 @@ Every NoSQL database is different and has its own risks. Just because they don't
 - [NoSQL Injection *(using MongoDB as an example)*](https://medium.com/rangeforce/nosql-injection-6514a8db29e3){:target="_blank"}
 - [Preventing NoSQL Injections *(near the end of the article)*](https://nullsweep.com/a-nosql-injection-primer-with-mongo/){:target="_blank"}
 
-## LDAP Injection
+### LDAP Injection
 If you're authenticating with an LDAP *(Local Directory Access Protocol)* server, and taking username/password info from a user, it could be vulnerable to injection.
 
 #### Further Reading
@@ -248,25 +258,27 @@ If you're authenticating with an LDAP *(Local Directory Access Protocol)* server
 - [LDAP Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html){:target="_blank"}
 
 
-## XPath Injection
+### XPath Injection
 When your database is an XML *(eXtensible Markup Language)* file, instead of using SQL you'll use XPath. If you're dynamically building the XPath query from user-supplied input, it can be vulnerable to injection.
 
 #### Further Reading
 - [What is XPath Injection](https://owasp.org/www-community/attacks/XPATH_Injection){:target="_blank"}
 - [Testing for XPath Injection](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/09-Testing_for_XPath_Injection){:target="_blank"}
 
-## OS Command Injection
+### OS Command Injection
 If user-supplied input is used to run OS commands, that code can be vulnerable to injection.
 
 #### Further Reading
 - [What is Command Injection](https://owasp.org/www-community/attacks/Command_Injection){:target="_blank"}
 - [OS Command Injection Defense Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html){:target="_blank"}
 
-## SMTP Headers Injection
+### SMTP Headers Injection
 If a contact web form is used to dynamically create emails, if it doesn't have proper controls and sanitization it can be vulnerable to injection.
 
 #### Further Reading
 - [Email Header Injection](https://www.acunetix.com/blog/articles/email-header-injection/){:target="_blank"}
+
+---
 
 ## Possible Ways To Help Prevent Injection
 If you want to protect yourself against possible injection attacks, you need to know where you might be vulnerable.

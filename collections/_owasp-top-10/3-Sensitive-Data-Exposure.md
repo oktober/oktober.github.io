@@ -18,6 +18,8 @@ Granted, it's not the only example of it, just the most common one we hear about
 
 <!--more-->
 
+{% include toc.md %}
+
 ---
 
 _All examples of potential attacks in this article are for demonstration and educational purposes only. They should never be used outside of a lab environment or to harm other computers, users, etc._
@@ -30,6 +32,8 @@ _All examples of potential attacks in this article are for demonstration and edu
 - Performing MITM *(Monster-In-The-Middle)* attacks (where they steal data over the wire)
 - Breaking into a server (like a database) and stealing its data
 - Performing MITB *(Monster-In-The-Browser)* attacks (where they steal decrypted data once it's received by the browser)
+
+---
 
 ## Possible Ways To Help Prevent Sensitive Data Exposure
 Like most vulnerabilities, this is a complex one to defend against.
@@ -70,6 +74,8 @@ Some things they recommend are:
 	- Keep keys and other application-level secrets in a secrets vault
 
 These are just some highlights. You should definitely [read through the whole thing](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere){:target="_blank"} yourself.
+
+---
 
 ## Sum It Up
 Sensitive data exposure is a huge problem.

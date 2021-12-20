@@ -20,6 +20,8 @@ So what exactly is this fairly common vulnerability?
 
 <!--more-->
 
+{% include toc.md %}
+
 ---
 
 _All examples of potential attacks in this article are for demonstration and educational purposes only. They should never be used outside of a lab environment or to harm other computers, users, etc._
@@ -115,12 +117,12 @@ In this example, the URL takes a display name and displays it back to the user w
 
 **HTML:**
 ```html
-<h1>Welcome, {name}</h1>
+<span style="font-style:italic">Welcome, {name}</span>
 ```
 
 **Web Page:** 
 
-# Welcome, Stacie
+<span style="font-style:italic">Welcome, Stacie</span>
 
 An attacker replaces `Stacie` in the URL with JavaScript and proves a reflected XSS vulnerability exists. They decide to exploit it by inserting a link to a malicious executable file.
 
@@ -211,11 +213,11 @@ Within the page, unsafe JavaScript code takes the value from `name` and displays
 
 **HTML:** 
 
-`<h1>Welcome, Stacie</h1>`
+`<span style="font-style:italic">Welcome, Stacie</span>`
 
 **Web Page:** 
 
-# Welcome, Stacie
+<span style="font-style:italic">Welcome, Stacie</span>
 
 An attacker discovers this field is vulnerable to a DOM-based (reflected) XSS attack.
 
@@ -237,7 +239,7 @@ This attack has the same end result as our reflected server-side attack, but thi
 
 A website owner wouldn't even know an attack had occurred if they were logging HTTP requests. The malicious code is located in the URL fragment (everything after the #) and URL fragments are not sent in the HTTP requests to the server.
 
-**What could a stored client-side XSS vulnerability look like?**
+#### What could a stored client-side XSS vulnerability look like?
 
 Let's take the stored server-side example from before where the Display Name, which is stored in a database, is vulnerable to attack. 
 
@@ -266,7 +268,7 @@ In addition to these testing basics, remember to:
 - test older browser versions since many users struggle to keep their browsers up to date
 - use automated testing, but don't rely solely on it (some vulnerabilities can only be spotted with manual testing)
 
-#### Further Reading:
+#### Further Reading
 - [OWASP Testing for Reflected Cross-Site Scripting](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting.html){:target="_blank"}
 - [OWASP Testing for Stored Cross-Site Scripting](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/02-Testing_for_Stored_Cross_Site_Scripting.html){:target="_blank"}
 - [OWASP Testing for DOM-Based Cross-Site Scripting](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting.html){:target="_blank"}
@@ -297,7 +299,7 @@ Hopefully this article helped you better understand what XSS is, how it can be e
 
 Like everything with security, XSS is complex. Check out the resources below to help further your knowledge and keep learning so you can build customized solutions that work for your situation.
 
-#### Further Reading:
+#### Further Reading
 - [OWASP Explains XSS Attacks](https://owasp.org/www-community/attacks/xss/){:target="_blank"}
 - [What is XSS? (by PortSwigger)](https://portswigger.net/web-security/cross-site-scripting){:target="_blank"}
 - [CWE-79: Improper Neutralization of Input During Web Page Generation (XSS)](https://cwe.mitre.org/data/definitions/79.html){:target="_blank"}

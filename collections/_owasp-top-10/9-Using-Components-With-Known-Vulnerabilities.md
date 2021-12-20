@@ -17,6 +17,8 @@ Components are used in practically every codebase. Unfortunately, this also mean
 
 <!--more-->
 
+{% include toc.md %}
+
 That's why OWASP identified "Using Components with Known Vulnerabilities" as one of their [Top Ten Web Application Security Risks](https://owasp.org/www-project-top-ten/){:target="_blank"}.
 
 ---
@@ -89,5 +91,5 @@ Keeping an eye on things with a well functioning patch management and monitoring
 
 Like everything with security, this topic can be complex. Check out the resources below to help further your knowledge and keep learning so you can build customized solutions that work for your situation.
 
-#### Further Reading:
+#### Further Reading
 - [OWASP Top Ten #9 Using Components with Known Vulnerabilities](https://owasp.org/www-project-top-ten/2017/A9_2017-Using_Components_with_Known_Vulnerabilities){:target="_blank"}

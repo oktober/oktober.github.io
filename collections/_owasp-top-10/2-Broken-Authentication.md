@@ -20,6 +20,8 @@ Logging in allows users to interact with our sites. It expands what they can do 
 
 <!--more-->
 
+{% include toc.md %}
+
 ---
 
 _All examples of potential attacks in this article are for demonstration and educational purposes only. They should never be used outside of a lab environment or to harm other computers, users, etc._
@@ -169,7 +171,7 @@ This is **when the code takes different amounts of time to return** depending on
 
 Like the error messages, we don't want to reveal anymore information than necessary. **Coding so our program returns in the *same amount of time* for all of the situations above** will help prevent malicious actors from discovering legitimate account credentials.
 
-##### Further Reading:
+##### Further Reading
 - [Testing for Timing Attacks](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/04-Test_for_Process_Timing){:target="_blank"}
 
 #### Possible Ways To Help Prevent Brute Force Attacks
@@ -305,13 +307,6 @@ No doubt you're using many 3rd party tools/servers/software to build and serve y
 - Use strong passwords and store them securely *(like in a password manager)*
 - Never store passwords in version control
 - Implement MFA *(if and wherever you can)*
-
----
-
-## You Made It!
-That's it! This was a huge topic. I tried to go in-depth where I could and introduce other areas for you to study further. 
-
-I hope this helps you understand authentication vulnerabilities a little bit more and helps you build more secure applications.
 
 ---
 

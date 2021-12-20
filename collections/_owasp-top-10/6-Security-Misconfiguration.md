@@ -16,6 +16,8 @@ Security misconfiguration is a pretty broad category. It's kind of a catch-all. 
 
 <!--more-->
 
+{% include toc.md %}
+
 ---
 
 ## Common Security Misconfigurations
@@ -55,7 +57,7 @@ Since this category is so broad, it can be very difficult to prevent. Still, we 
 
 These are just a few of the things that can help. **Check out the resources below** to help expand your knowledge and create a customized process that works for your situation.
 
-#### Further Reading:
+#### Further Reading
 - [NIST Guide to General Server Hardening](https://csrc.nist.gov/publications/detail/sp/800-123/final){:target="_blank"}
 - [CIS Security Configuration Guides/Benchmark](https://www.cisecurity.org/cis-benchmarks/){:target="_blank"}
 - [OWASP Configuration Verification Requirement (PDF - *starting on p.59*)](https://raw.githubusercontent.com/OWASP/ASVS/v4.0.2/4.0/OWASP%20Application%20Security%20Verification%20Standard%204.0.2-en.pdf){:target="_blank"}

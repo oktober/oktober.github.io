@@ -17,6 +17,8 @@ Insecure deserialization is a potentially very damaging attack for web applicati
 
 <!--more-->
 
+{% include toc.md %}
+
 ---
 
 _All examples of potential attacks in this article are for demonstration and educational purposes only. They should never be used outside of a lab environment or to harm other computers, users, etc._
@@ -146,6 +148,6 @@ If you can't do that, do what you can to help prevent tampering by attackers and
 
 Like everything with security, insecure deserialization is complex. Check out the resources below to help further your knowledge and keep learning so you can build customized solutions that work for your situation.
 
-#### Further Reading:
+#### Further Reading
 - [OWASP Top Ten #8 Insecure Deserialization](https://owasp.org/www-project-top-ten/2017/A8_2017-Insecure_Deserialization){:target="_blank"}
 - [OWASP Top Ten Proactive Controls 2018](https://owasp.org/www-project-proactive-controls/v3/en/c5-validate-inputs){:target="_blank"}

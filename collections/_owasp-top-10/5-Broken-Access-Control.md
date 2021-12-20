@@ -18,6 +18,8 @@ If an attacker can access someone else's bank account, personal information, or 
 
 <!--more-->
 
+{% include toc.md %}
+
 ---
 
 _All examples of potential attacks in this article are for demonstration and educational purposes only. They should never be used outside of a lab environment or to harm other computers, users, etc._
@@ -63,7 +65,7 @@ All of these situations have some form of broken access control that can have ve
 
 Why? Because access control is about more than just code. It's about how that code really works and how users interact with it. The best way to discover these types of vulnerabilities is with a human using the application.
 
-#### Further Reading:
+#### Further Reading
 - [Testing for Broken Authorization *(Access Control)*](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/README){:target="_blank"}
 - [OWASP's 2017 Top Ten #5 Broken Access control *(under "Is the Application Vulnerable?" section)*](https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control){:target="_blank"}
 
@@ -108,7 +110,7 @@ According to [OWASP](https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_A
 As we said in the beginning, access control can be difficult to identify. To help you find it before the attackers do, [OWASP recommends you](https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control){:target="_blank"}:
 > "include functional access control unit and integration tests"
 
-#### Further Reading:
+#### Further Reading
 - [Testing for Authorization](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/README){:target="_blank"}
 
 ---

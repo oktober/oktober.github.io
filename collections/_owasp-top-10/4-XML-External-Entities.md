@@ -18,6 +18,8 @@ Let's talk about where XML could exist in your app, what XXE is and why it's a r
 
 <!--more-->
 
+{% include toc.md %}
+
 ---
 
 _All examples of potential attacks in this article are for demonstration and educational purposes only. They should never be used outside of a lab environment or to harm other computers, users, etc._
@@ -126,7 +128,7 @@ Let's step through what will happen here.
 
 This example isn't perfect. There's a decent chance an attacker would need to base64 encode the `/etc/passwd` first, but the idea is the same. **They're creating external entities and using them to exfiltrate server data**.
 
-### Further Reading:
+### Further Reading
 - [More Examples of XXE attacks](https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet.html#xml-entity-expansion){:target="_blank"}
 
 ---
@@ -136,7 +138,7 @@ XXE can be difficult to understand if you don't understand how XML works and how
 
 At a minimum, **this access allows an attacker to view sensitive server information**. At its worst, **it could be used to eventually launch RCE *(Remote Code Execution)* attacks**, which is very, very bad.
 
-### Further Reading:
+### Further Reading
 - [Learn More About XXE](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing){:target="_blank"}
 - [Testing for XML Injection *(can be used as an entry point to inject XXE)*](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/07-Testing_for_XML_Injection){:target="_blank"}
 
