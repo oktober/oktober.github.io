@@ -23,14 +23,16 @@ And there's a reason it's difficult to be secure, other than human psychology.
 
 <!--more-->
 
-### Why Is Cybersecurity So Hard To Do?
+{% include toc.md %}
+
+## Why Is Cybersecurity So Hard To Do?
 Our world becomes more connected every day. Companies feel entitled to our information without providing adequate security or privacy measures. Software is built to enable ease of use over security.
  
 It's not just you - cybersecurity is hard for everyone, everywhere. Because our systems and society refuse to build privacy and security into their foundations. It's not a priority in our society, so it's not a vital part of the creation process. 
 
 We want our products quick and cheap. Security's just not a priority.
 
-#### Passwords Are Flawed
+### Passwords Are Flawed
 Let's talk about the design of using passwords.
 
 Passwords, since the beginning, have  been flawed. 
@@ -45,7 +47,7 @@ Increases in processing power make passwords easier to crack every year. We alwa
 
 Now, we're stuck with a system that wasn't intended for networks that can be accessed globally. They're not very secure for that. To combat the password's growing vulnerabilities, we stack on additional authentication methods.
 
-#### Better, But Imperfect Solutions
+### Better, But Imperfect Solutions
 So now you can't just have unique, strong passwords (though that's a good start for everyone). You also need MFA (*multi-factor authentication, commonly implemented as 2FA - 2-factor authentication*).
 
 The most convenient way to implement it (*SMS/text messaging*) is also the least secure way. It's much better than just a username & password though, so I'd recommend using it as opposed to nothing.
@@ -72,7 +74,7 @@ Don't get me wrong, SMS messaging is better than just a username and password - 
 
 But we're still cobbling together security methods to try and make the username/password system  more secure. Because of its widespread use, we don't have the option to scrap it and build something genuinely secure from the bottom up.
 
-#### Insecure Beginnings
+### Insecure Beginnings
 As users, it totally makes sense why we might get frustrated.
 
 The original method (*username & password*) was insecure. So use a stronger (*longer*) password. Oh, but now you have to make sure it's unique for every site and  it needs to be fairly random. 
@@ -85,14 +87,14 @@ It's constantly changing, because **the foundation (*username & password*) was i
 
 Unfortunately, as [Troy Hunt surmises](https://www.troyhunt.com/heres-why-insert-thing-here-is-not-a-password-killer/){:target="_blank"}, passwords are likely here to stay. So we better get used to it.
 
-#### Not Just Passwords
+### Not Just Passwords
 Passwords aren't the only guilty party. The [internet is inherently insecure](https://www.washingtonpost.com/sf/business/2015/05/30/net-of-insecurity-part-1){:target="_blank"}. That's why we have to add things like HTTPS and VPNs. 
 
 At its core, the internet is about connecting with others. To connect, you first have to trust. But when we started connecting, trust was implied, not earned.
 
 Now we've realized trust should be earned first. But that means adding on to the internet's foundations and trying to cobble together a newer, more secure connection. Just like with passwords.
 
-#### It Is What It Is
+### It Is What It Is
 I'm not at all saying I know how to fix it, or even that I would begin to know how to do it better. It's easy for me to sit here, decades after these systems were put in place and point out their faults.
 
 We are where we are. It is what it is.
@@ -103,7 +105,9 @@ I point this out because this is partly why cybersecurity is so damn difficult, 
 
 That's why it's hard. It's not just you. It's not just me. It's the systems.
 
-### So What Can You Do?
+---
+
+## So What Can You Do?
 I know it can feel overwhelming, but all you need to do is try your best.
 
 **Learn about cybersecurity**, like you're doing now.

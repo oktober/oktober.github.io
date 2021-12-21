@@ -17,11 +17,15 @@ Apparently, DynaRisk (a security research company), found malicious hackers disc
 
 <!--more-->
 
+{% include toc.md %}
+
 The criminals wasted no time and quickly began discussing ways to monetize this data. **They could peddle fake weight-loss pills or lure the women to malicious sites with ads for great deals on plus-size clothing.**
 
 The hacker who stole the data is actually quite smart and not just because they’re a hacker. 
 
 This data isn’t just a set of random individuals - like [the Equifax breach](https://www.usatoday.com/story/tech/2020/02/10/2017-equifax-data-breach-chinese-military-hack/4712788002/){:target="_blank"}. This is a concentrated set of individuals that are all tied together because they’ve shopped at plus-size clothing stores. **Because this data is tied to a pretty specific demographic it’s more valuable.**
+
+---
 
 ## Why Is It Valuable?
 Hackers know why - that’s why they keep breaking in and stealing data like this.
@@ -34,6 +38,8 @@ Marketers do this all the time. They determine a section of the people in the wo
 
 **This set of data is already very targeted, which is exactly what all advertisers are trying to get a hold of.**
 
+---
+
 ## Why Should You Care?
 Because your customers are at risk in the same way these people were.
 
@@ -44,6 +50,8 @@ Your customers use your business for a reason. It’s very likely you don’t ma
 Malicious hackers, just like legitimate businesses, want your customer data - because they are your customers.
 
 If they can steal your customer data, they can target your customers to scam them. Like legitimate advertising businesses, you have targeted data they can advertise to. The only difference is malicious hackers won’t buy it from you - they’ll steal it.
+
+---
 
 ## What Can You Do?
 
@@ -118,6 +126,8 @@ There are many situations where you have to keep certain data. **There are many 
 If you keep what you don’t need and that data gets stolen, you have a bigger problem on your hands. More people to notify. More potential fines or legal fees to pay.
 
 Take it off your plate. **Create a reasonable policy for when to get rid of data and do it.** It’s better for everyone if you do.
+
+---
 
 ## Sum It Up
 Customers place a lot of trust in you and your business by giving you their data.

@@ -25,13 +25,18 @@ But your business needs to be online. What should you do?
 
 <!--more-->
 
+{% include toc.md %}
+
+## Alternatives to a custom website
+
 You could pay someone else to do it. Depending on what you need, you’d pay a couple hundred dollars or a couple thousand. That’s a lot of money. And you have to be involved in the whole project. That’s money plus time and energy. Once it’s done, you’ll have to maintain it. Customers hate finding your hours online and seeing a ‘Closed’ sign when they stop by. 
 
 **Building a website is a commitment.** Is it a commitment you’re ready for? Or **is there something else you can do that won’t take as much time, energy, and money? Something that will get you online today?**
 
 Luckily, there is.
 
-## 1 - Don’t build a website. 
+### 1 - Don’t build a website
+
 Building a website means learning lots of new skills. Don’t start with a website. **Start smaller instead.** 
 
 - Create a [Facebook business page](https://www.facebook.com/business/){:target="_blank"}
@@ -44,7 +49,8 @@ You don’t have to do much, but you still need to check in once a week, at leas
 
 What if an informational listing or page doesn’t work for your business? What could you do instead?
 
-## 2 - Use a website builder platform.
+### 2 - Use a website builder platform
+
 Maybe you really do need a website. You can still use those other services and have a website too.
 
 A website builder platform is a great option. **They give you the designs and tools to create a unique website—no coding necessary**. They have lots of documentation and support to help. They host it for you. They worry about the little details like site and server administration so you don’t have to. They aren’t fully customizable, but you don’t need that right now. 
@@ -57,7 +63,7 @@ There are lots of website builders out there. I recommend [searching for “webs
 
 No matter what you decide, **you still have to practice good cybersecurity and protect yourself online**. What are some ways to do this?
 
-## 3 Tips to keep you safer online:
+## 3 tips to keep you safer online
 1. **Use a password manager, with a strong master password**, to store all your logins. Use a password that's unique, random, and strong for every account. 
 
 2. **Enable 2-factor authentication on every account**—including your password manager and domain name(s). Use private registration on your domains to hide personal information. Set them  to auto-renew.

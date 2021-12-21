@@ -17,7 +17,11 @@ HTTPS is misunderstood. People see the little green lock and think, “Great! I�
 
 <!--more-->
 
+{% include toc.md %}
+
 HTTPS does 2 things. **It verifies you’re talking with the right website and encrypts your web traffic.**
+
+---
 
 ## How Does HTTPS Work?
 When you visit an HTTPS website, it will take a few seconds to load. Your browser and the web server have to **first establish a secure connection using the TLS handshake.**
@@ -30,12 +34,16 @@ First, the browser contacts the web server and says hi. It sends the web server 
 
 That extra time to load allows your browser to verify the website and create an encrypted ‘tunnel’ for communication. This prevents eavesdroppers from spying or modifying your communications with that website.
 
+---
+
 ## Doesn’t HTTP do this?
 **HTTP sends all web traffic in the clear**. Anyone watching the data travel back and forth can read everything. They can also modify it. This is called a MITM (Man-In-The-Middle) attack. **It’s often used to spy, install malware, or steal login information**. 
 
 Sometimes your ISP (Internet Service Provider - where your internet comes from), the ultimate MITM, inserts helpful pop-ups into HTTP websites. They want to tell you how much data you’ve used and they do this by modifying the webpage as it’s sent to you.
 
 **HTTP web traffic can be viewed and modified at any point. HTTPS verifies and secures your communication to prevent a MITM from attacking.**
+
+---
 
 ## Then Why Isn’t HTTPS Safe?
 HTTPS only ***secures*** the communication between browser and web server. **It can’t ensure the communication is safe**. It was never designed for that.
@@ -48,6 +56,8 @@ A good antivirus running regular scans can help. Being skeptical about websites 
 
 **HTTPS verifies and secures our communication, but it can’t keep us “safe” online.**
 
+---
+
 ## If I Use HTTPS, Will I Always Be Secure?
 I wish. Unfortunately, **there are ways HTTPS can be misused or abused**.
 
@@ -57,10 +67,14 @@ I wish. Unfortunately, **there are ways HTTPS can be misused or abused**.
 
 These are things you can’t control, but you should still know about them. Now, let’s talk about things you can control.
 
+---
+
 ## How Can You Stay Safe Online?
 First, you need an **up-to-date antivirus scanning regularly**, if possible. All your **devices and software need to be up-to-date, including browsers**. Avoid pop-ups, even if they seem helpful. If a pop-up tells you to update something, go directly to the website and download the update there. Never install something from a pop-up online.
 
 **Always use HTTPS websites when you can**. If you’re on a public WiFi network, like at a coffee shop or hotel, **use a VPN (Virtual Private Network)**. They are affordable, easy to use, and worth the protection.
+
+---
 
 ## Sum It Up
 HTTPS verifies and secures your online communications. It protects you from MITM attacks if setup correctly, but it can’t keep you safe from malware. **It’s still the best option and you should use it whenever possible**.

@@ -20,7 +20,11 @@ Here are 3 reasons you probably don't need one.
 
 <!--more-->
 
-### 1. You don't have the money
+{% include toc.md %}
+
+---
+
+## 1. You don't have the money
 
 Websites are expensive (if done well). A fully-customized website can cost a couple thousand dollars. An out-of-the-box site will run you at least $300+ a year. 
 
@@ -30,7 +34,9 @@ Building a website is like building a house. You get what you pay for. Upgrade t
 
 You can keep your website small and simple. You'll keep costs down and launch your website sooner. You still need to know exactly what you want for your website and share your vision with the developer. 
 
-### 2. You don't have the time
+---
+
+## 2. You don't have the time
 
 **Websites are time-consuming**. A developer (or you) builds them, which can take a few weeks to a few months. With a developer, you have to be available to provide direction, files, content, and anything else they need. 
 
@@ -40,7 +46,9 @@ Once your website's built, you'll need to [keep it updated](https://staciefarmer
 
 Owning a website is like owning a house. Once you've built it, you must maintain it. Do you have the resources for it?
 
-### 3. Everyone else is doing it
+---
+
+## 3. Everyone else is doing it
 
 You don't want to be left behind. I get it. 
 
@@ -48,8 +56,8 @@ As we've covered in #1 and #2, you don't have the time or money for it right now
 
 You can focus on building your business and when it's the right time, you'll know it.
 
-
 ---
+
 ## But I Still Need to be Online!
 
 Agreed. If these things apply to you - **you don't need a website**.

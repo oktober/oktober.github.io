@@ -21,6 +21,8 @@ So don’t bother. Yeah, you heard me right. **Don’t try to stop all the attac
 
 <!--more-->
 
+{% include toc.md %}
+
 ## An Easier Way
 Instead, think about your situation. What technology is important to you? Is it the documents on your laptop? Is it a specific app or website you use? Is it your financial accounts? Is it your web server hosting your website? 
 
@@ -66,6 +68,8 @@ This can be a lot to go through, but you’ll feel better once you do. You’ll 
 
 **And if/when an attack happens, you will be prepared.** Probably not for everything, but hopefully for the worst. And you’ll know what to do to recover quickly.
 
+---
+
 ## What About Your Other Stuff?
 You’ve got the valuable stuff protected. What about everything else?
 
@@ -77,10 +81,14 @@ Pick the most valuable. Repeat the same process you did above. Hopefully, it sho
 
 **And take it one step at a time**. You don’t have to make all your technology secure at once. It’s better and easier to take it one step at a time. You’ll slowly beef up your security over time and won’t get overwhelmed.
 
+---
+
 ## Stay Vigilant
 No matter what you do, keep an eye on those valuable assets.  Just because they’re protected now, doesn’t mean they’ll be protected next week. Attacks evolve over time. You need to know how they’re changing and adjust your game plan. [Read about current cybersecurity news](https://threatpost.com/){:target="_blank"} or [listen to a daily podcast](https://www.thecyberwire.com/podcasts/){:target="_blank"}. Find what works for you and your schedule. 
 
 **Stay aware and keep your assets safe.**
+
+---
 
 ## Sum It Up
 **Cybersecurity can feel overwhelming, but it doesn’t have to**. Start where you are. Identify which technology assets are most valuable to you. Protect them first and foremost. How can they be attacked? How can they be protected? How can you recover?

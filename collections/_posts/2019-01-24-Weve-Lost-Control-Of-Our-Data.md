@@ -19,23 +19,29 @@ Let's pick 3 of those services and say you have a Google account for your Androi
 
 <!--more-->
 
-### How Much Info?
+{% include toc.md %}
+
+## How Much Info?
 Well, Google knows who you're emailing. They can sync your email contacts with your phone's contacts. That means they have a decent idea who you know. Based on your conversations, they can glean who you hang out with for fun, who you work with, and who are family members - as long as you talk to your family every now and then.
 
 Do you enjoy music on YouTube? Who doesn't, right?
 
 Google knows exactly which genres you listen to and when you listen to them. Do you rock out to heavy metal around 6pm on the weekdays? Maybe you listen to some relaxing music, maybe even spiritual, on Sundays? Do you play music during work hours or only on goof-off days like Monday and Friday?
 
-These are listening patterns Google can easily figure out. With just those 3 services, Google can create a pretty accurate portrait of your day-to-day life. 
+These are listening patterns Google can easily figure out. With just those 3 services, Google can create a pretty accurate portrait of your day-to-day life.
 
-### Always Collecting
+---
+
+## Always Collecting
 Any Google app you use gives them permission to collect data about you.
 
 They're definitely not the only company. Collecting, packaging, and reselling user data has become a lucrative business model. It's why [Facebook priced their initial IPO at over &#36;100 billion](https://www.wsj.com/articles/SB10001424052702303448404577409923406193162){:target="_blank"}. 
 
 Collecting, packaging, and selling your data brings in big bucks for these companies.
 
-### With Our Blessing
+---
+
+## With Our Blessing
 And we've agreed to this. We want to use their "free" products. In exchange, we give them our data and the right to analyze it, aggregate it with our other data, and sell it.
 
 We've been giving companies unnecessary data for a long time. Remember not too long ago, when we'd write our social security number down for any business that wanted it? We don't think twice about sharing our address and phone number with companies, and haven't for a long time. 
@@ -54,7 +60,9 @@ They know more about us than our own mothers do. Hell, they know more about us t
 
 And it's alarming.
 
-### Is It Consensual Though?
+---
+
+## Is It Consensual Though?
 
 We don't know how each and every piece of software we use, website we visit, or even rewards card we enter gathers our data. We don't know what they're gathering, how they store it, or who they sell it to.
 
@@ -86,21 +94,27 @@ I would argue, and so would the French data protection agency, hiding all that i
 
 But businesses will likely find a new way to gain our "consent". One just as confusing and difficult to understand. But once they do it, we've technically agreed to let them keep doing what they're doing. And that is how I think they'll win these battles with GDPR.
 
-### Security, Anyone?
+---
+
+## Security, Anyone?
 Do you know how they're protecting all this data about you? How are they keeping this perfect assessment of your entire life secure? How are they ensuring third parties, whom they sell to, are also keeping this super specific information secure?
 
 Another really good question I think. And one companies are failing at.
 
 Remember the [Cambridge Analytica breach](https://www.theguardian.com/technology/2018/apr/08/facebook-to-contact-the-87-million-users-affected-by-data-breach){:target="_blank"}? That happened because Facebook sold our information to a third party who failed to secure it. That one made headlines because of the size of the breach, but I guarantee there will be more.
 
-### The Dilemma
+---
+
+## The Dilemma
 Companies feel entitled to our data. They built a prouct. We want to use that product. So we give them our data and they let us use their product.
 
 But the sacrifice has become too much. 
 
 We've sacrificed control over our information. We've given them the right to collect massive amounts of data about us and to do with it what they will. And they are doing whatever they want with it.
 
-### The "R" Word
+---
+
+## The "R" Word
 We need regulation to reign them in. Our data belongs to us. What they collect paints too accurate a picture of us. And it's completely out of our control.
 
 We deserve the right to control how our data is collected, who is allowed to have it, how it's used, and how it's secured.

@@ -17,11 +17,15 @@ One great marketing tool, whether you have a website or not, is a [Facebook busi
 
 <!--more-->
 
+{% include toc.md %}
+
 According to [Katie Sehl on Hootsuite](https://blog.hootsuite.com/facebook-demographics/){:target="_blank"}, there are over 2 billion active users each month on Facebook and they are probably in your target market.
 
 **But a Facebook page is not ideal for every business.** Your target market may be active on other social media platforms or may not be very active online. So how do you know if it's right for your business? 
 
 **Read on to see if these 5 reasons apply** and you should create a Facebook page for your business.
+
+---
 
 ## 1. You Need a Basic Informational Page
 **Maybe you don't have a website yet, but need to be online.**
@@ -32,6 +36,8 @@ Facebook pages allow you to advertise your business (name, location, hours, deta
 
 Website or no website, creating a Facebook business page is a **great way to grow your online presence and bring in more customers**.
 
+---
+
 ## 2. Connect With Your Local Community
 If you're a local business, Facebook is a great way to connect and be visible in your community.
 
@@ -40,6 +46,8 @@ Users can comment on your page or posts, ask questions, and leave reviews. These
 Travis Balinas at Outbound Engine has some [great tips on Social Media Etiquette for Businesses](https://www.outboundengine.com/blog/social-media-etiquette-for-business-25-dos-donts/){:target="_blank"}. You will treat online customers as courteously and respectfully as you do other customers. But there are additional factors that arise online. I highly recommend reading the article to help you navigate as a business online.
 
 Facebook pages are **a valuable marketing opportunity for increasing visibility in your local community**. Be authentic, kind, and respectful and clients will come to you for solutions first.
+
+---
 
 ## 3. Share Photos, Videos, & Events
 Facebook is all about sharing. 
@@ -52,6 +60,8 @@ If your company hosts events, Facebook is a **great platform for allowing people
 
 No matter what method of promotion works best for you, Facebook can help you reach your target audience and display your talents.
 
+---
+
 ## 4. Promote items, run contests or giveaways
 Does your business sell products? **Use Facebook to share new or interesting items with  customers.** Take a high-quality photo and tell customers why this new product is perfect for them. 
 
@@ -60,6 +70,8 @@ Even better, **offer a giveaway or run a contest!**
 Emily Weisberg on ThriveHive offers some [great tips for running a Facebook contest](https://thrivehive.com/how-to-run-a-facebook-contest/){:target="_blank"}. There are rules you must follow so I also recommend reviewing Rafflecopter's post on [Facebook Promotion Guidelines](https://www.rafflecopter.com/facebook-promotion-guidelines){:target="_blank"}.
 
 Give them a read and **start creating buzz about your products!**
+
+---
 
 ## 5. You Enjoy Connecting & Interacting With Customers
 Facebook is all about connection. It will enhance your interactions with customers more than a website ever could.

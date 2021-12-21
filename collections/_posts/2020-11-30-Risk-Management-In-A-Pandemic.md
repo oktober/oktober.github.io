@@ -17,7 +17,9 @@ Since this risk is so in our faces right now, I thought it'd be fun to talk abou
 
 <!--more-->
 
-# The 4 Risk Controls
+{% include toc.md %}
+
+## The 4 Risk Controls
 When learning about risk management, I was taught there are 4 ways to deal with it.
 
 You can:
@@ -31,7 +33,7 @@ What's important to remember is these controls are not mutually exclusive. You c
 Let's talk about what each one of them means when it comes to a global pandemic.
 
 <a name="avoiding-risk"></a>
-## Avoiding Risk
+### Avoiding Risk
 I've been really lucky in that I've been able to avoid the risk of catching SARS-CoV-2 this year (I think).
 
 If you're like me and you've stayed home as much as you possibly can, you've been avoiding the risk. This is a completely valid option (if you're lucky enough to have it) with definite upsides, if you can deal with the downsides (social isolation and the risks associated with that).
@@ -41,7 +43,7 @@ If you can choose to stay home without being too negatively impacted, that's a g
 Ultimately, I've found that I can only do this up to a point. So while avoiding the risk of catching SARS-CoV-2 is part of my strategy, it's not the only control I use.
 
 <a name="transferring-risk"></a>
-## Transferring Risk
+### Transferring Risk
 Usually when you hear about risk transference, people are talking about insurance. You pay the insurance company to take on part, or all, of the financial risk. In this pandemic, that's still a wise choice to do if you can. If you can pay for health, life, and/or long-term care insurance that could help reduce or prevent financial impacts caused by COVID-19.
 
 There's another way of transferring risk I've been doing the past 6 months or so - paying someone else to shop for my groceries. At my local grocery store, I can order online and someone else will shop for me. I still have to drive to the store and they'll load the groceries in my car. This severely limits my exposure while transferring that risk to the shoppers. Anyone who is paying someone else to purchase and deliver their goods is transferring that risk.
@@ -57,7 +59,7 @@ I also understand that my exposure to others drastically decreases by doing this
 I honestly don't know if this is a morally good action or not. What I do know is it's a perfect example of risk transference.
 
 <a name="mitigating-risk"></a>
-## Mitigating Risk
+### Mitigating Risk
 Mitigation is an idea most of us are familiar with - wearing masks, limiting outings, keeping your distance from people, etc.
 
 This is probably the most common control people are using. It's one I'm definitely trying to do. After you stay at home for months on end, you start to evaluate the inherent risks associated with venturing out and how you can mitigate them.
@@ -69,7 +71,7 @@ I think it's safe to say no one wants that, but many also refuse to mitigate the
 It's tricky, but that's one of the downsides of a previously unknown risk that shows up and throws your world in chaos!
 
 <a name="accepting-risk"></a>
-## Accepting Risk
+### Accepting Risk
 This is the inevitable option many of us choose at some point.
 
 If you will go hungry without physically shopping for food yourself, you'll probably try to mitigate the risk but ultimately accept some level of risk as you venture outside your home.
@@ -83,6 +85,8 @@ We all have our reasons. Considering our economy is structured for mostly in-per
 So, you could argue that this control would only be used when none of the other controls are acceptable options. Like, if you can't avoid the risk, can't transfer it, and can't (or don't want to) mitigate it, then you accept it. I disagree though. 
 
 I think when it comes to managing risk, we all use at least a few of these options, if not all of them, to deal with it. And if the current social climate is any indication, we all disagree on what controls can or should be used.
+
+---
 
 ## Wrap It Up
 I have no idea what you should do to manage the risk of COVID-19. What I do know is that it was fun to think through risk management controls I learned in college and apply them to a terrifying global pandemic. Who knew a business degree could be relevant to real life?

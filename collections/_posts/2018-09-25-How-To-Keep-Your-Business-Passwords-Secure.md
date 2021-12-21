@@ -19,6 +19,8 @@ Then you come across a website that won't allow a special character you use. Now
 
 <!--more-->
 
+{% include toc.md %}
+
 **What happens when password data gets leaked from a site?** That one strong password won't help you anymore. It's now freely available across the web and linked with your email address.
 
 **What about updating your secure password(s)?** If you're like me, you have hundreds of site logins. What if one of them gets breached (*hackers get your data and share or sell it to the highest bidder*)? Which they likely will at some point... Now you have to update ALL your other website logins.
@@ -60,6 +62,8 @@ The EFF (Electronic Freedom Foundation) has great tips on creating a secure pass
 They recommend using [dice and a word list](https://ssd.eff.org/en/module/creating-strong-passwords){:target="_blank"}. You just need 5 dice and their word list [to create a strong passphrase](https://www.eff.org/dice){:target="_blank"}.
 
 Only write down your passphrase if you can store it safely or only until you've memorized it. If you forget it, it can be extremely hard to access your password manager account.
+
+---
 
 ## Sharing With Teams
 
