@@ -4,7 +4,7 @@ title: Understanding Cookies - Overview
 order: 1
 tags: understanding-cookies
 description: Cookies are complicated, but still commonly used for keeping users logged in to a site. Learn a little more about the nuances behind setting cookies and what you're really doing when you set that attribute.
-date: 2021-12-22
+date: 2021-12-06
 ---
 
 In this tutorial I'll walk you through how cookies work and how you can modify their default behavior using attributes.
