@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Part 5 - Cookie Attribute Path
-order: 5
+order: 6
 tags: understanding-cookies
 description: 
 date: 2021-12-13

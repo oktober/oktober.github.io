@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Part 6 - Cookie Attributes Secure & HttpOnly
-order: 6
+order: 7
 tags: understanding-cookies
 description: 
 date: 2021-12-14

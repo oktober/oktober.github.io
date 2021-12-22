@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Part 1 - Why We Use Cookies
-order: 1
+order: 2
 tags: understanding-cookies
 description: Cookies are complicated, but still commonly used for keeping users logged in to a site. Learn a little more about the nuances behind setting cookies and what you're really doing when you set that attribute.
 date: 2021-12-07

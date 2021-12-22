@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Part 7 - Cookie Attribute SameSite
-order: 7
+order: 8
 tags: understanding-cookies
 description: 
 date: 2021-12-15

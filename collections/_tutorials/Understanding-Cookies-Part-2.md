@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Part 2 - Cookie Default Behavior
-order: 2
+order: 3
 tags: understanding-cookies
 description: 
 date: 2021-12-08
