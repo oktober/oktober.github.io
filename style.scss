@@ -19,8 +19,8 @@ html {
 
 body {
 	background: $white;
-  font: 1.1em/1.4 $helvetica;
   color: $darkGray;
+  font: 1.1em/1.4 $helvetica;
 }
 
 .container {
@@ -31,10 +31,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
   color: $darkerGray;
+  font-family: $helveticaNeue;
   font-weight: 700;
-  
   margin: 0.5em 0;
   padding: 0;
 
@@ -45,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 1.7em;
+
   a {
     color: inherit;
   }
@@ -68,8 +68,9 @@ p {
 
 a {
   color: $blue;
+  cursor: pointer;
   text-decoration: underline;
-	cursor: pointer;
+
   &:hover, &:active {
     color: $blue;
   }
@@ -135,20 +136,20 @@ th {
 }
 
 .date {
+  color: $gray;
   font-size: 0.9rem;
   font-style: italic;
-  color: $gray;
   margin-bottom: 0.95rem;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
   background: $lightGray;
+  color: $black;
 }
 ::selection {
-  color: $black;
   background: $lightGray;
+  color: $black;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -171,13 +172,10 @@ th {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 0;
-}
-
 .masthead {
-  padding: 1rem 0;
   border-bottom: 1px solid $lightGray;
+  padding: 1rem 0;
+
   a {
     text-decoration: none;
   }
@@ -189,9 +187,9 @@ th {
 
 .site-avatar {
   float: left;
-  width: 70px;
   height: 100%;
   margin-right: 0.6rem;
+  width: 70px;
 
   @include mobile {
     float: none;
@@ -215,40 +213,34 @@ th {
 }
 
 .site-name {
-  margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $defaultHeadingFont;
-  font-weight: 300;
-  font-size: 1.6em;
+  font: 300 1.6em/1.4 $defaultHeadingFont;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
   color: $gray;
   font-size: 0.95em;
+  margin: -5px 0 0 0;
 }
 
 #menu {
   float: right;
-  margin-top: 1rem;
   font-family: $defaultHeadingFont;
+  margin-top: 1rem;
   text-align: right;
 
   @include mobile {
     float: none;
-    margin-top: 0.5rem;
     font-size: 0.9em;
+    margin-top: 0.5rem;
     text-align: center;
   }
 
   .nav {
     list-style: none;
-    /*font-weight: 300;
-    margin-bottom: 10px;
-    float: left;
-    width: 100%;*/
   }
 
   .nav li {
@@ -260,11 +252,11 @@ th {
   }
 
   .nav a {
+    border: 1px solid $white;
+    color: $darkGray;
     display: block;
     padding: 0.5rem;
-    color: $darkGray;
     text-decoration: none;
-    border: 1px solid white;
   }
   .nav a:hover {
     text-decoration: underline;
@@ -272,17 +264,18 @@ th {
 
   /*--- DROPDOWN ---*/
   .nav ul {
+    background: $lightGray;
     list-style: none;
     min-width: 100%;
     padding-left: 0;
-    background: #eee;
+
     /* Moves the dropdown off screen */
-    position: absolute;
     left: -9999px;
+    position: absolute;
   }
   .nav ul li {
-    margin-right: 0;
     float: none;
+    margin-right: 0;
   }
   .nav ul a {
     border: 0;
@@ -314,7 +307,7 @@ th {
 }
 
 .toc {
-  border: 1px solid #000;
+  border: 1px solid $darkerGray;
   float: right;
   margin: 0 0 1rem 1rem;
   max-width: 35%;
@@ -341,14 +334,12 @@ th {
 // blog
 //
 
-.posts > .post {
+.post {
+  border-bottom: 1px solid $lightGray;
   /* Need minimum height for posts without much intro text */
   min-height: 320px;
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
 
-.post {
   .thumbnail {
     float: left;
     margin-right: 0.8rem;
@@ -364,8 +355,8 @@ th {
   }
 
   .post-title {
-    margin-bottom: 0;
     line-height: 1;
+    margin-bottom: 0;
   }
 
   h2 {
@@ -373,12 +364,12 @@ th {
   }
 
   blockquote {
-    margin: 1em .8em;
     border-left: 2px solid $gray;
-    padding: 0.1em 1em;
     color: $gray;
     font-size: 1.2em;
     font-style: italic;
+    margin: 1em .8em;
+    padding: 0.1em 1em;
   }
 
   .comments {
@@ -409,24 +400,25 @@ th {
 }
 
 .pagination {
-  min-width: 320px;
-  margin-top: 1.6em;
   display: flex;
   justify-content: space-between;
+  margin-top: 1.6em;
+  min-width: 320px;
 
   .page_number {
-    min-width: 100px;
     margin: 1.1rem 0;
+    min-width: 100px;
   }
 
   .previous, .next {
-    display: inline-block;
-    width: 115px;
-    text-align: center;
-    font-weight: 700;
     background: $lightGray;
     border-radius: 15px;
+    color: $darkGray;
+    display: inline-block;
+    font-weight: 700;
     padding: 1.1rem 1.2rem;
+    text-align: center;
+    width: 115px;
   }
 }
 
@@ -442,8 +434,8 @@ th {
 }
 
 .article-link, .filler {
-  width: 270px;
   height: 100%;
+  width: 270px;
 
   @include mobile {
     width: 100%;
@@ -451,8 +443,8 @@ th {
 }
 
 .article-link img {
-  width: 270px;
   height: 270px;
+  width: 270px;
 }
 
 .thumbnail-attribution {
@@ -465,8 +457,8 @@ th {
 }
 
 .article-link-title {
-  margin: 0;
   font-size: 1.4rem;
+  margin: 0;
 }
 
 .excerpt {
@@ -501,8 +493,8 @@ li.tutorial {
   }
 
   h3 {
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   p {
@@ -525,10 +517,10 @@ li.tutorial {
 //
 
 .wrapper-footer {
+  background: $lightGray;
+  border-bottom: 1px solid $mediumGray;
+  border-top: 1px solid $mediumGray;
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {
