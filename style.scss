@@ -223,10 +223,6 @@ th {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 0.95em;
-
-  /*@include mobile {
-    margin: 3px 0;
-  }*/
 }
 
 #menu {
@@ -242,51 +238,73 @@ th {
     text-align: center;
   }
 
-  ul {
+  .nav {
     list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-
-    @include mobile {
-      min-width: 140px;
-      justify-content: center;
-      align-items: center;
-      padding-left: 0;
-    }
-
-    @include mobile-sm {
-      min-width: 130px;
-      max-width: 130px;
-      margin: 0 auto;
-    }
+    /*font-weight: 300;
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;*/
   }
 
-  li {
-    @include mobile-sm {
-      flex-basis: 130px;
-    }
+  .nav li {
+    float: left;
+    position: relative;
+  }
+  .nav li:not(:last-child){
+    margin-right: 10px;
   }
 
-  li + li {
-    margin-left: 2rem;
-
-    @include mobile-sm {
-      margin: 0.2rem 0;
-    }
-  }
-
-  a {
+  .nav a {
+    display: block;
+    padding: 0.5rem;
     color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid white;
+  }
+  .nav a:hover {
+    text-decoration: underline;
   }
 
-  a:hover {
-    @include mobile-sm {
-      text-decoration: underline;
-    }
+  /*--- DROPDOWN ---*/
+  .nav ul {
+    list-style: none;
+    min-width: 100%;
+    padding-left: 0;
+    background: #eee;
+    /* Moves the dropdown off screen */
+    position: absolute;
+    left: -9999px;
+  }
+  .nav ul li {
+    margin-right: 0;
+    float: none;
+  }
+  .nav ul a {
+    border: 0;
+    font-size: 0.9rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .nav li:hover ul {
+    /* Brings the dropdown back on screen */
+    left: 0;
 
+    /* Don't show dropdowns for really small screens */
+    @include mobile {
+      left: -9999px;
+    }
+    @include mobile-sm {
+      left: -9999px;
+    }
+  }
+  .nav li:hover a {
+    text-decoration: underline
+  }
+  .nav li:hover ul a {
+    text-decoration: none;
+  }
+  .nav li:hover ul li a:hover {
+    text-decoration: underline
   }
 }
 
