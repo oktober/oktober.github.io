@@ -78,6 +78,11 @@ a {
 ul, ol {
   margin: 0.95rem 0;
   padding-left: 1.7rem;
+
+  @include mobile-sm {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 ul {
@@ -322,6 +327,14 @@ th {
       margin: .5rem 0 0 0;
     }
   }
+
+  @include mobile {
+    max-width: 55%;
+  }
+
+  @include mobile-sm {
+    max-width: 100%;
+  }
 }
 
 //
@@ -339,6 +352,11 @@ th {
   .thumbnail {
     float: left;
     margin-right: 0.8rem;
+
+    @include mobile {
+      float: none;
+      margin-top: 2.5rem;
+    }
     
     .thumbnail-attribution {
       display: block;
@@ -426,6 +444,10 @@ th {
 .article-link, .filler {
   width: 270px;
   height: 100%;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .article-link img {
@@ -436,6 +458,10 @@ th {
 .thumbnail-attribution {
   font-size: 0.7rem;
   font-style: italic;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .article-link-title {
