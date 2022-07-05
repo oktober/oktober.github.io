@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 9. Using Components with Known Vulnerabilities
+title: OWASP Top Ten - Using Components with Known Vulnerabilities
 tags: tech
 description: 
 thumbnail: /9-using-components-with-known-vulnerabilities/thumbnail.jpg

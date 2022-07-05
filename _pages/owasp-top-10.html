@@ -5,28 +5,36 @@ title: OWASP Top Ten
 ---
 <h1>OWASP Top 10</h1>
 <hr>
-{% assign post-count = site.owasp-top-10 | size %}
-{% assign remainder = post-count | modulo: 3 %}
+
+<h2>2021 Top Ten Web Application Security Risks</h2>
+<a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP's official 2021 Top Ten list</a>
+<ol>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Access-Control">Broken Access Control</a> - Moved up to #1 from #4 in 2017</li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Cryptographic-Failures">Cryptographic Failures</a> - previously known as 'Sensitive Data Exposure'</li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Injection">Injection</a> - Moved down from #1 in 2017, also encompasses <a href="{{ site.baseurl }}/owasp-top-10/Cross-Site-Scripting">XSS</a> now</li>
+  <li>Insecure Design - new category for 2021</li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Misconfiguration">Security Misconfiguration</a> - combined with <a href="{{ site.baseurl }}/owasp-top-10/XML-External-Entities">XXE</a> for 2021</li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Vulnerable-And-Outdated-Components">Vulnerable and Outdated Components</a> - previously known as 'Using Components with Known Vulnerabilities</li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Identification-And-Authentication-Failures">Identification and Authentication Failures</a> - previously known as 'Broken Authentication'</li>
+  <li>Software and Data Integrity Failures - encompasses <a href="{{ site.baseurl }}/owasp-top-10/Insecure-Deserialization">Insecure Deserialization</a> for 2021</li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Logging-And-Monitoring-Failures">Security Logging and Monitoring Failures</a> - previously known as 'Insufficient Logging & Monitoring'</li>
+  <li>Server-Side Request Forgery (SSRF) - newly added to the top ten in 2021</li>
+</ol>
 
 
-<div class="article-list">
-  {% for vuln in site.owasp-top-10 %}
-    <div class="article-link">
+<hr>
 
-	    <a href="{{ site.baseurl }}{{ vuln.url }}" class="thumbnail"><img src="/assets/images/owasp-top-10{{ vuln.thumbnail }}" alt="{{ vuln.image-alt }}"></a>
-	    <span class="thumbnail-attribution">Photo by <a href="{{ vuln.thumbnail-creator-link }}" target="_blank">{{ vuln.thumbnail-creator }}</a> on <a href="{{ vuln.thumbnail-site }}" target="_blank">{{ vuln.thumbnail-site-name }}</a></span>
-	    <h2 class="article-link-title"><a href="{{ site.baseurl }}{{ vuln.url }}">{{ vuln.title }}</a></h2>
-
-      <div class="excerpt">
-        {{ vuln.excerpt | truncate: 156 }}
-      </div>
-    </div>
-  {% endfor %}
-
-    <!-- if items will not fit an entire row of 3 on bottom, add filler div(s) -->
-    {% if remainder > 0 %}
-      {% for i in (remainder..2) %}
-        <div class="filler"></div>
-      {% endfor %}
-    {% endif %}
-</div>
+<h2>2017 Top Ten Web Application Security Risks</h2>
+<a href="https://owasp.org/www-project-top-ten/2017/" target="_blank">OWASP's official 2017 Top Ten list</a>
+<ol>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Injection">Injection</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Authentication">Broken Authentication</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Sensitive-Data-Exposure">Sensitive Data Exposures</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/XML-External-Entities">XML External Entities (XXE)</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Access-Control">Broken Access Control</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Misconfiguration">Security Misconfiguration</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Cross-Site-Scripting">Cross-Site Scripting (XSS)</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Insecure-Deserialization">Insecure Deserialization</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Using-Components-With-Known-Vulnerabilities">Using Components with Known Vulnerabilities</a></li>
+  <li><a href="{{ site.baseurl }}/owasp-top-10/Insufficient-Logging-And-Monitoring">Insufficient Logging & Monitoring</a></li>
+</ol>

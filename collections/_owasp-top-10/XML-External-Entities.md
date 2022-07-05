@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 4. XML External Entities (XXE)
+title: OWASP Top Ten - XML External Entities (XXE)
 tags: tech
 description: 
 thumbnail: /4-xml-external-entities/thumbnail.jpg
@@ -159,6 +159,6 @@ Like everything in security, this is a complex topic. **It can be difficult to f
 
 Do your best, keep researching, and learn more to understand and help protect your application against this vulnerability.
 
-### Further Reading
+#### Further Reading
 - [How to Prevent XXE](https://owasp.org/www-project-top-ten/2017/A4_2017-XML_External_Entities_(XXE)){:target="_blank"}
 - [OWASP's XXE Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html){:target="_blank"}

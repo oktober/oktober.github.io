@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 1. Injection
+title: OWASP Top Ten - Injection
 tags: tech
 description: 
 thumbnail: /1-injection/thumbnail.jpg
@@ -308,6 +308,7 @@ For example, if you've just integrated an API or ORM with a known injection flaw
 As always, keeping your third-party software updated helps prevent known vulnerabilities from being exploited. It's a simple *(most of the time)* and commonly overlooked step, but **regularly updating will save you a lot of headache**.
 
 #### Further Reading
+- [OWASP 2021 - #3 Injection](https://owasp.org/Top10/A03_2021-Injection/){:target="_blank"}
 - [OWASP's list of Free for Open Source Application Security Tools](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools){:target="_blank"}
 - [OWASP's list of most injection types and how to test for them](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/){:target="_blank"}
 - [Difference between XSS and Injection](https://blog.rapid7.com/2013/06/20/xss-vs-injection/){:target="_blank"}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 2. Broken Authentication
+title: OWASP Top Ten - Identification and Authentication Failures
 tags: tech
 description: 
 thumbnail: /2-broken-authentication/thumbnail.jpg
@@ -9,7 +9,7 @@ thumbnail-creator: Pasha Mukhalchuk
 thumbnail-site: https://unsplash.com/
 thumbnail-site-name: Unsplash
 image-alt: Open lock hanging off an old door with a bolt latch
-date: 2020-11-18
+date: 2022-07-05
 ---
 
 Authentication is the backbone to any web application. Without it, we'd have web "sites", but probably no web "applications" - or at least only very insecure ones.
@@ -310,7 +310,8 @@ No doubt you're using many 3rd party tools/servers/software to build and serve y
 
 ---
 
-## Want to Learn More About Authentication?
+#### Further Reading
+- [OWASP - #7 Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/){:target="_blank"}
 - [Understand your Authentication Assurance Level and how you should secure it](https://owasp.org/www-project-proactive-controls/v3/en/c6-digital-identity){:target="_blank"}
 - [Selecting your AAL *(great visual flowchart)*](https://pages.nist.gov/800-63-3/sp800-63-3.html#-62-selecting-aal){:target="_blank"}
 - [NIST's Digital Identity Guidelines](https://pages.nist.gov/800-63-3/sp800-63-3.html){:target="_blank"} 

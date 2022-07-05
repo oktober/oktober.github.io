@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 6. Security Misconfiguration
+title: OWASP Top Ten - Security Misconfiguration
 tags: tech
 description: 
 thumbnail: /6-security-misconfiguration/thumbnail.jpg
@@ -12,7 +12,9 @@ image-alt: Key left in lock
 date: 2021-01-14
 ---
 
-Security misconfiguration is a pretty broad category. It's kind of a catch-all. It includes some of the other OWASP Top Ten vulnerabilities such as sensitive data exposure, broken authorization, etc. It also includes a few more scenarios that don't quite fit in any other category such as error handling, unnecessary open ports, etc.
+Security misconfiguration is a pretty broad category. It's kind of a catch-all. It includes some of the other OWASP Top Ten vulnerabilities such as sensitive data exposure, broken authorization, etc. It also includes a few more scenarios that don't quite fit in any other category such as error handling, unnecessary open ports, etc. 
+
+In 2021, OWASP also folded <a href="{{ site.baseurl }}/owasp-top-10/XML-External-Entities">XML External Entities (XXE)</a> into Security Misconfiguration as part of their Top Ten list.
 
 <!--more-->
 
@@ -58,6 +60,7 @@ Since this category is so broad, it can be very difficult to prevent. Still, we 
 These are just a few of the things that can help. **Check out the resources below** to help expand your knowledge and create a customized process that works for your situation.
 
 #### Further Reading
+- [OWASP - #5 Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/){:target="_blank"}
 - [NIST Guide to General Server Hardening](https://csrc.nist.gov/publications/detail/sp/800-123/final){:target="_blank"}
 - [CIS Security Configuration Guides/Benchmark](https://www.cisecurity.org/cis-benchmarks/){:target="_blank"}
 - [OWASP Configuration Verification Requirement (PDF - *starting on p.59*)](https://raw.githubusercontent.com/OWASP/ASVS/v4.0.2/4.0/OWASP%20Application%20Security%20Verification%20Standard%204.0.2-en.pdf){:target="_blank"}

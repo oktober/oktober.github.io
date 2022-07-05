@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 5. Broken Access Control
+title: OWASP Top Ten - Broken Access Control
 tags: tech
 description: 
 thumbnail: /5-broken-access-control/thumbnail.jpg
@@ -14,7 +14,7 @@ date: 2021-01-08
 
 If you've ever logged into your bank account or downloaded your tax forms online, you've dealt with access control.
 
-If an attacker can access someone else's bank account, personal information, or download their tax forms, then you have a case of the #5 vulnerability - Broken Access Control.
+If an attacker can access someone else's bank account, personal information, or download their tax forms, then you have a case of Broken Access Control.
 
 <!--more-->
 
@@ -28,7 +28,7 @@ _All examples of potential attacks in this article are for demonstration and edu
 
 When developing restricted access to resources online (such as requiring a user to log in to access their account information), you must deal with at least 2 areas: **Authentication and Authorization**.
 
-We discussed Broken Authentication *(failing to adequately verify a user is who they say they are)* in [a previous post]({{ site.baseurl }}{% link _owasp-top-10/2-Broken-Authentication.md %}).
+We discussed Broken Authentication *(failing to adequately verify a user is who they say they are)* in [a previous post]({{ site.baseurl }}{% link _owasp-top-10/Broken-Authentication.md %}).
 
 In this post, we'll discuss the second, and just as complex, piece - **Broken Access Control *(aka Broken Authorization)***.
 
@@ -123,4 +123,5 @@ By following OWASP's recommendations above, **you can help reduce the likelihood
 As always, do adequate research and craft a security plan that works for your application and your organization.
 
 #### Further Reading
+- [OWASP 2021 - #1 Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/){:target="_blank"}
 - [OWASP's Access Control Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html){:target="_blank"}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 8. Insecure Deserialization
+title: OWASP Top Ten - Insecure Deserialization
 tags: tech
 description: 
 thumbnail: /8-insecure-deserialization/thumbnail.jpg

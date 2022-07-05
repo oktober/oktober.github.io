@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 7. Cross-Site Scripting (XSS)
+title: OWASP Top Ten - Cross-Site Scripting (XSS)
 tags: tech
 description: 
 thumbnail: /7-cross-site-scripting/thumbnail.jpg
@@ -300,6 +300,7 @@ Hopefully this article helped you better understand what XSS is, how it can be e
 Like everything with security, XSS is complex. Check out the resources below to help further your knowledge and keep learning so you can build customized solutions that work for your situation.
 
 #### Further Reading
+- [OWASP 2021 - #3 Injection](https://owasp.org/Top10/A03_2021-Injection/){:target="_blank"}
 - [OWASP Explains XSS Attacks](https://owasp.org/www-community/attacks/xss/){:target="_blank"}
 - [What is XSS? (by PortSwigger)](https://portswigger.net/web-security/cross-site-scripting){:target="_blank"}
 - [CWE-79: Improper Neutralization of Input During Web Page Generation (XSS)](https://cwe.mitre.org/data/definitions/79.html){:target="_blank"}

@@ -1,20 +1,18 @@
 ---
 layout: post
-title: OWASP Top Ten - 3. Sensitive Data Exposure
+title: OWASP Top Ten - Cryptographic Failures
 tags: tech
 description: 
-thumbnail: /3-sensitive-data-exposure/thumbnail.jpg
-thumbnail-creator-link: https://unsplash.com/@pankajpatel
-thumbnail-creator: Pankaj Patel
-thumbnail-site: https://unsplash.com/
-thumbnail-site-name: Unsplash
-image-alt: List of data
-date: 2020-12-02
+thumbnail: 
+thumbnail-creator-link: 
+thumbnail-creator: 
+thumbnail-site: 
+thumbnail-site-name: 
+image-alt: 
+date: 2022-06-30
 ---
 
-If you remember some of the more high-profile data breaches, such as the Equifax one in 2017 or the Target one in 2013, then you're familiar with sensitive data exposure.
-
-Granted, it's not the only example of it, just the most common one we hear about.
+In 2017, this vulnerability was referred to as 'Sensitive Data Exposure', but in 2021, OWASP wanted to focus in on the root problem behind why sensitive data tends to get exposed. When you focus in, you see that the root problem is failures in cryptography suck as weak, or even nonexistent, cryptography practices.
 
 <!--more-->
 
@@ -27,7 +25,7 @@ _All examples of potential attacks in this article are for demonstration and edu
 ---
 
 ## How Data Exposure Happens
-[According to OWASP](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html){:target="_blank"}, sensitive data exposure happens when malicious actors attack you in the following ways:
+[According to OWASP](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html){:target="_blank"}, sensitive data exposure  happens when malicious actors attack you in some of the following ways:
 - Stealing your private keys
 - Performing MITM *(Monster-In-The-Middle)* attacks (where they steal data over the wire)
 - Breaking into a server (like a database) and stealing its data
@@ -36,7 +34,7 @@ _All examples of potential attacks in this article are for demonstration and edu
 ---
 
 ## Possible Ways To Help Prevent Sensitive Data Exposure
-Like most vulnerabilities, this is a complex one to defend against.
+Like most vulnerabilities, this is a complex one to defend against, especially because different types of data require different security implementations.
 
 You could encrypt everything, but what if an attacker gets into your server, steals your data, then decrypts it on their own time?
 
@@ -44,20 +42,7 @@ Or what if you use a strong encryption algorithm only to find out later it has a
 
 Like everything with security, you're going to need to do a lot of research to find the best option for your situation.
 
-A good place to start is OWASP's recommendations for [how to prevent sensitive data exposure](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html){:target="_blank"}. 
-
-At a minimum, they recommend to:
-- **Classify data processed, stored or transmitted by an application**. Identify which data is sensitive according to privacy laws, regulatory requirements, or business needs.
-- **Apply controls** as per the classification.
-- **Don't store sensitive data unnecessarily**. Discard it as soon as possible or use PCI DSS compliant tokenization or even truncation. ***Data that is not retained cannot be stolen***.
-- Make sure to **encrypt all sensitive data at rest**.
-- Ensure **up-to-date and strong standard algorithms**, protocols, and keys are in place; use proper key management.
-- **Encrypt all data in transit** with secure protocols such as TLS with perfect forward secrecy (PFS) ciphers, cipher prioritization by the server, and secure parameters. Enforce encryption using directives like HTTP Strict Transport Security ([HSTS](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html){:target="_blank"}).
-- **Disable caching for response that contain sensitive data**.
-- **Store passwords using strong adaptive and salted hashing functions with a work factor** (delay factor), such as [Argon2](https://www.cryptolux.org/index.php/Argon2){:target="_blank"}, [scrypt](https://wikipedia.org/wiki/Scrypt){:target="_blank"}, [bcrypt](https://wikipedia.org/wiki/Bcrypt){:target="_blank"}, or [PBKDF2](https://wikipedia.org/wiki/PBKDF2){:target="_blank"}.
-- **Verify independently the effectiveness of configuration and settings**.
-
-*(**Bold** emphasis mine)*
+A good place to start is OWASP's recommendations for [how to prevent cryptographic failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/#how-to-prevent){:target="_blank"}.
 
 I also recommend reading [OWASP's Top Ten Proactive Controls 2018 - C8: Protect Data Everywhere](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere){:target="_blank"}. 
 
@@ -73,12 +58,12 @@ Some things they recommend are:
 	- Don't store secrets in code, config files, or pass them through environment variables
 	- Keep keys and other application-level secrets in a secrets vault
 
-These are just some highlights. You should definitely [read through the whole thing](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere){:target="_blank"} yourself.
+These are just some highlights. I highly recommend [reading through the whole thing](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere){:target="_blank"}.
 
 ---
 
 ## Sum It Up
-Sensitive data exposure is a huge problem.
+Sensitive data exposure is a huge problem and it's often caused by cryptographic failures.
 
 As web developers, it's our duty to build secure applications that protect data while it's in use, in transit, and at rest.
 
@@ -88,9 +73,8 @@ But data exposure risks don't stop there. We also have to think about what data 
 
 Check out the resources above and the ones below to keep learning more about this ever-present security vulnerability.
 
----
-
-## Further Reading
+#### Further Reading
+- [OWASP - #2 Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/){:target="_blank"}
 - [OWASP's HSTS Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html){:target="_blank"}
 - [OWASP's Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html){:target="_blank"}
 - [NIST's Cryptographic Algorithm Validation Program](https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program){:target="_blank"}

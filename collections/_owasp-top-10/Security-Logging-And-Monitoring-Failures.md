@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OWASP Top Ten - 10. Insufficient Logging & Monitoring
+title: OWASP Top Ten - Security Logging & Monitoring Failures
 tags: tech
 description: 
 thumbnail: /10-insufficient-logging-and-monitoring/thumbnail.jpg
@@ -12,6 +12,7 @@ image-alt: A laptop with a graph showing trends over time
 date: 2021-06-15
   
 ---
+*Previously known as 'Insufficient Logging and Monitoring'.*
 
 Attacks are happening all the time, but would you be able to recognize one as it's happening?
 
@@ -19,7 +20,7 @@ Attacks are happening all the time, but would you be able to recognize one as it
 
 {% include toc.md %}
 
-Most of us wouldn't, which is why OWASP identified "Insufficient Logging and Monitoring" as one of their [Top Ten Web Application Security Risks](https://owasp.org/www-project-top-ten/){:target="_blank"}. It's a vulnerability we could all use a little help preventing.
+Most of us wouldn't, which is why OWASP identified "Security Logging and Monitoring Failures" as #9 in their [2021 Top Ten Web Application Security Risks](https://owasp.org/www-project-top-ten/){:target="_blank"}. It's a vulnerability we could all use a little help preventing.
 
 ---
 
@@ -27,7 +28,7 @@ _All examples of potential attacks in this article are for demonstration and edu
 
 ---
 
-## Insufficient Logging and Monitoring
+## Security Logging and Monitoring Failures
 Logging allows us to get an idea of what's going on with our application. Monitoring shows us what's happening in real, or near-real, time.
 
 Too often though we're not logging or monitoring or we're doing it, but not very well.
@@ -36,8 +37,8 @@ Unfortunately, this deficit makes attacks more likely to happen and more devasta
 
 ---
 
-## Possible Ways to Help Prevent Insufficient Logging and Monitoring
-Logging and monitoring solutions will be unique to your specific situation, but the following list, compiled from [OWASP's recommendations](https://owasp.org/www-project-top-ten/2017/A10_2017-Insufficient_Logging%2526Monitoring){:target="_blank"}, is a great place to start to determine if your current process might be lacking and ways you could improve it.
+## Possible Ways to Help Prevent Security Logging and Monitoring Failures
+Logging and monitoring solutions will be unique to your specific situation, but the following list, compiled from [OWASP's recommendations](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/){:target="_blank"}, is a great place to start to determine if your current process might be lacking and ways you could improve it.
 
 ### 1. Log Appropriately 
 - Use a common log format across systems so you can easily feed it to an aggregator
@@ -67,6 +68,6 @@ Proper logging and subsequent monitoring can be a valuable tool in detecting att
 Check out the resources below to help further your knowledge and keep learning so you can build customized solutions that work for your situation.
 
 #### Further Reading
-- [OWASP Top Ten #10 Insufficient Logging and Monitoring](https://owasp.org/www-project-top-ten/2017/A10_2017-Insufficient_Logging%2526Monitoring){:target="_blank"}
+- [OWASP Top Ten #9 Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/){:target="_blank"}
 - [OWASP Proactive Controls: Implement Logging and Monitoring](https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging.html){:target="_blank"}
 - [OWASP Cheat Sheet: Logging](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html){:target="_blank"}
