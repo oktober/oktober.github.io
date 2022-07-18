@@ -49,7 +49,7 @@ Chances are, your application has some form of security misconfiguration going o
 ## Ways to Help Prevent Security Misconfiguration
 Since this category is so broad, it can be very difficult to prevent. Still, we need to try.
 
-[OWASP has some great tips](https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration){:target="_blank"} on ways you can prevent these types of misconfigurations:
+[OWASP has some great tips](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/#how-to-prevent){:target="_blank"} on ways you can prevent these types of misconfigurations:
 - Create an automated hardening process for creating and deploying new, secure environments.
 - Ensure your platform/application/etc is set up with only the absolute necessary features. Remove any unnecessary features/frameworks/etc.
 - Regularly review and update configurations for security notes, updates, and patches - especially cloud storage permissions.
