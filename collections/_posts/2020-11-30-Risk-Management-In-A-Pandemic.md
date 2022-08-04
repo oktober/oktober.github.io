@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Risk Management in a Pandemic
-tags: musings cybersecurity featured
+tags: musings cybersecurity
 description: 
 thumbnail: /post-thumbnails/2020-11-30-risk-management-in-a-pandemic-thumbnail.jpg
 thumbnail-creator-link: https://unsplash.com/@exxteban
