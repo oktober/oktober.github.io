@@ -182,3 +182,4 @@ Check out the resources below to help further your knowledge and keep learning s
 - [Same-Origin Policy by Mariko Kosaka {Web.dev}](https://web.dev/same-origin-policy/){:target="_blank"}
 - [Same-origin policy {CodeDocs.org}](https://codedocs.org/what-is/same-origin-policy){:target="_blank"}
 - [Same Origin Policy {W3}](https://www.w3.org/Security/wiki/Same_Origin_Policy){:target="_blank"}
+- [The Web Origin Concept - RFC6454](https://datatracker.ietf.org/doc/html/rfc6454){:target="_blank"}
