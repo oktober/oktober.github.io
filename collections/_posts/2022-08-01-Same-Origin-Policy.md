@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Same-Origin Policy
-tags: tech cybersecurity featured
+tags: tech cybersecurity
 description: 
 thumbnail: /post-thumbnails/2022-08-01-same-origin-policy-thumbnail.jpg
 thumbnail-creator-link: https://unsplash.com/@christinhumephoto
