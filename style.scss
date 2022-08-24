@@ -306,6 +306,10 @@ th {
   }
 }
 
+hr.home {
+  margin: 1.8rem 0;
+}
+
 .toc {
   border: 1px solid $darkerGray;
   float: right;
@@ -328,6 +332,14 @@ th {
   @include mobile-sm {
     max-width: 100%;
   }
+}
+
+//
+// tutorials
+//
+
+div.tutorials {
+  margin-top: 1.8rem;
 }
 
 //

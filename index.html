@@ -2,31 +2,32 @@
 layout: default
 ---
 
-<div>
-  <p>Hi there, I'm Stacie! I'm a full stack developer who helps companies secure their web applications.</p>
-  <p>This is my little corner of the internet where I write about the things I'm learning, share talks I've given, and occasionally recommend what I think are good resources.</p>
-  <p>I'm a big privacy advocate so you don't have to worry about cookies or any kind of tracking on my page. Relax, take a look around, and I hope you find something you like.</p>
-
-  <hr>
-
-  <p><span style="font-weight:bold;">I am currently open to remote Application Security/Developer positions</span>. If you're looking for someone with experience building web applications who is also obsessed with securing them, <a href="https://www.linkedin.com/in/staciefarmer" target="_blank">reach out to me on LinkedIn</a>. I'd love to hear from you!</p>
-</div>
-
-<hr>
-
 <h1>Featured Posts</h1>
 
 <div class="article-list">
   {% for post in site.tags.featured %}
     <div class="article-link">
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="thumbnail"><img src="/assets/images{{ post.thumbnail }}" alt="{{ vuln.image-alt }}"></a>
+      <a href="{{ post.url }}" class="thumbnail"><img src="/assets/images{{ post.thumbnail }}" alt="{{ post.image-alt }}"></a>
       <span class="thumbnail-attribution">Photo by <a href="{{ post.thumbnail-creator-link }}" target="_blank">{{ post.thumbnail-creator }}</a> on <a href="{{ post.thumbnail-site }}" target="_blank">{{ post.thumbnail-site-name }}</a></span>
-      <h2 class="article-link-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-      <div class="excerpt">
-        {{ post.excerpt | truncate: 156 }}
-      </div>
+      <h2 class="article-link-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     </div>
   {% endfor %}
+</div>
+
+<hr class="home">
+
+<h1>Featured Tutorials</h1>
+
+<div class="article-list">
+{% for tutorial in site.tutorials reversed %}
+  {% if tutorial.tags contains "overview" %}
+    <div class="article-link">
+
+      <a href="{{ tutorial.url }}" class="thumbnail"><img src="/assets/images{{ tutorial.thumbnail }}" alt="{{ tutorial.image-alt }}"></a>
+      <span class="thumbnail-attribution">Photo by <a href="{{ tutorial.thumbnail-creator-link }}" target="_blank">{{ tutorial.thumbnail-creator }}</a> on <a href="{{ tutorial.thumbnail-site }}" target="_blank">{{ tutorial.thumbnail-site-name }}</a></span>
+      <h2 class="article-link-title"><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h2>
+    </div>
+  {% endif %}
+{% endfor %}
 </div>

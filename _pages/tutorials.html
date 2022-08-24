@@ -4,18 +4,15 @@ permalink: /tutorials/
 title: Tutorials
 ---
 
-<h2>Understanding Cookies & How They Really Work</h2>
-{% for tutorial in site.tutorials %}
-	{% if tutorial.tags contains "understanding-cookies" %}
- 		<li class="tutorial"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ tutorial.url }}">{{ tutorial.title }}</a></li>
-	{% endif %}
-{% endfor %}
+<div class="article-list tutorials">
+{% for tutorial in site.tutorials reversed %}
+  {% if tutorial.tags contains "overview" %}
+    <div class="article-link">
 
-<hr />
-
-<h2>How To Install Laravel 7 On VirtualBox VM Running Linux Mint 19</h2>
-{% for tutorial in site.tutorials %}
-	{% if tutorial.tags contains "mint-laravel" %}
- 		<li class="tutorial"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ tutorial.url }}">{{ tutorial.title }}</a></li>
-	{% endif %}
+      <a href="{{ tutorial.url }}" class="thumbnail"><img src="/assets/images{{ tutorial.thumbnail }}" alt="{{ tutorial.image-alt }}"></a>
+      <span class="thumbnail-attribution">Photo by <a href="{{ tutorial.thumbnail-creator-link }}" target="_blank">{{ tutorial.thumbnail-creator }}</a> on <a href="{{ tutorial.thumbnail-site }}" target="_blank">{{ tutorial.thumbnail-site-name }}</a></span>
+      <h2 class="article-link-title"><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h2>
+    </div>
+  {% endif %}
 {% endfor %}
+</div>

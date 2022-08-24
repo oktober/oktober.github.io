@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cross-Origin Resource Sharing (CORS) Configuration Vulnerabilities - Part 1
-tags: tech cybersecurity featured
+tags: tech cybersecurity
 description: 
 thumbnail: /post-thumbnails/2022-08-15-cors-configuration-vulnerabilities-part-1-thumbnail.jpg
 thumbnail-creator-link: https://unsplash.com/@vonshnauzer
