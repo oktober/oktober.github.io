@@ -22,6 +22,14 @@ So what is it? How does it work? How does it protect us and where does it fail?
 
 ---
 
+## Prerequisites
+
+To help understand the concepts in this article, you should already be familiar with:
+- [How the web works: HTTP requests & responses]({{ site.baseurl }}/How-The-Web-Works){:target="_blank"}
+- [Basic understanding of Javascript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
+
+---
+
 ## What's an Origin?
 If we want to learn what *Same-Origin Policy* is, we need to clarify what exactly an *origin* is.
 

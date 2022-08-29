@@ -22,6 +22,15 @@ You can loosen the restrictions of SOP and let other sites access your resources
 
 ---
 
+## Prerequisites
+
+To help understand the concepts in this article, you should already be familiar with:
+- [How the web works: HTTP requests & responses]({{ site.baseurl }}/How-The-Web-Works){:target="_blank"}
+- [Basic understanding of Javascript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
+- [Same Origin Policy]({{ site.baseurl }}/Same-Origin-Policy){:target="_blank"}
+
+---
+
 ## Who Is This Article For?
 There are 2 different use cases for CORS. You're either **the application opening up access to your resources** or you're **the application _accessing_ someone else's resources**.
 

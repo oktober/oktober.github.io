@@ -22,6 +22,18 @@ In this article we'll discuss the other situations you should be aware of where 
 
 ---
 
+## Prerequisites
+
+To help understand the concepts in this article, you should already be familiar with:
+- [How the web works: HTTP requests & responses]({{ site.baseurl }}/How-The-Web-Works){:target="_blank"}
+- [Basic understanding of Javascript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
+- [Same Origin Policy]({{ site.baseurl }}/Same-Origin-Policy){:target="_blank"}
+- [Cross-Origin Resource Sharing headers]({{ site.baseurl }}/CORS-Headers){:target="_blank"}
+
+We also recommend reading the article for [CORS Configuration Vulnerabilities - Part 1]({{ site.baseurl }}/CORS-Configuration-Vulnerabilities-Part-1){:target="_blank"} first, if you haven't already.
+
+---
+
 ## Using `null` with credentials
 Some apps add `null` to their origin allow/approved list while also setting `Access-Control-Allow-Credentials: true`.
 

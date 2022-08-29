@@ -22,6 +22,16 @@ If not done properly, then security vulnerabilities can easily arise and attacke
 
 ---
 
+## Prerequisites
+
+To help understand the concepts in this article, you should already be familiar with:
+- [How the web works: HTTP requests & responses]({{ site.baseurl }}/How-The-Web-Works){:target="_blank"}
+- [Basic understanding of Javascript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
+- [Same Origin Policy]({{ site.baseurl }}/Same-Origin-Policy){:target="_blank"}
+- [Cross-Origin Resource Sharing headers]({{ site.baseurl }}/CORS-Headers){:target="_blank"}
+
+---
+
 ## Risks of a CORS vulnerability
 CORS relaxes the security of the SOP. This means if something does go wrong in the implementation of CORS, we don't have the SOP to protect us.
 
