@@ -22,7 +22,7 @@ Some examples of my code and the different languages/frameworks I've used:
     - [RSS Reader App](https://github.com/oktober/laravel-rss){:target="_blank"}
 
 ### Python
-- FreeCodeCamp's [Scientific Computing with Python course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/){:target="_blank"} projects:
+- FreeCodeCamp's [Scientific Computing with Python course](https://www.freecodecamp.org/learn/scientific-computing-with-python/){:target="_blank"} projects:
     - [Arithmetic Formatter](https://github.com/oktober/boilerplate-arithmetic-formatter){:target="_blank"}
     - [Time Calculator](https://github.com/oktober/boilerplate-time-calculator){:target="_blank"}
     - [Budget App](https://github.com/oktober/boilerplate-budget-app){:target="_blank"}
