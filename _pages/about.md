@@ -24,8 +24,12 @@ When the weather gets too cold for gardening, or my back is too sore, I'll likel
 
 I'd love to help a company, with a remote team, improve their web applications and make them more secure.
 
-I enjoy finding the right tools to help test an application and diving into the code. I can translate the technical into something humans can understand and work easily with both technical and not-as-technical teams.
+I enjoy finding the right tools to help test an application and diving into the code. I can translate the technical into something humans can understand and work easily with both technical and not-so-technical teams.
 
-When it comes down to it, I'm' always learning and applying that knowledge to help companies - and their users - be safer online.
+When it comes down to it, I'm always trying to learn more and using that knowledge to help companies - and their users - be safer online.
 
 If you think I could help, <a href="https://www.linkedin.com/in/staciefarmer" target="_blank">reach out to me on LinkedIn</a>. I'd love to hear about you, your company, and your goals to improve your application(s) and its security.
+
+---
+
+[Want to see my code?]({{ site.baseurl }}{% link _pages/code.md %})
