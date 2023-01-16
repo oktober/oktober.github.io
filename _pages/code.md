@@ -14,12 +14,13 @@ Some examples of my code and the different languages/frameworks I've used:
     - [Cash Register](https://github.com/oktober/javascript-practice/blob/main/freecodecamp/cash-register.js){:target="_blank"}
 
 ### Jekyll
-- The site you're on was built with Jekyll using [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"} by Barry Clark. I've customized it (by adding collections, updating CSS, etc) to be the site you see here.
+- The site you're on was built with Jekyll using [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"} by Barry Clark. I've customized it (by adding collections, updating CSS, etc) to become the site you see here.
     - [staciefarmer.com](https://github.com/oktober/oktober.github.io){:target="_blank"}
 
 ### Laravel
-- To better understand Laravel, I built a mostly functional RSS Reader app. I'm currently in the process of upgrading it to Laravel 9 (originally built with 7).
-    - [RSS Reader App](https://github.com/oktober/laravel-rss){:target="_blank"}
+- To better understand Laravel, I built a mostly functional RSS Reader app. Currently you can add a new site (to pull an RSS feed from), view all the posts from that feed, and edit the site's name and URL.
+    - [RSS Reader App w/Laravel 9](https://github.com/oktober/laravel-rss-9){:target="_blank"}
+    - [RSS Reader App w/Laravel 7](https://github.com/oktober/laravel-rss-7){:target="_blank"}
 
 ### Python
 - FreeCodeCamp's [Scientific Computing with Python course](https://www.freecodecamp.org/learn/scientific-computing-with-python/){:target="_blank"} projects:
