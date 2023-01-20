@@ -44,7 +44,7 @@ Essentially, components are blocks of 3rd party code that you integrate into you
 
 In WordPress, components would be like plugins. They're built by 3rd parties and you can plug them into your codebase to expand its functionality.
 
-In many applications, components are 3rd party libraries or a larger self-contained package of software you can include in your codebase. jQuery is a good example of this type of component. It's a popular library that makes writing Javascript easier and is commonly used in many web applications.
+In many applications, components are 3rd party libraries or a larger self-contained package of software you can include in your codebase. jQuery is a good example of this type of component. It's a popular library that makes writing JavaScript easier and is commonly used in many web applications.
 
 ### Benefits vs Risks of Components
 Components can offer lots of benefits. They allow us to quickly expand the functionality of our code and can even increase its security. 

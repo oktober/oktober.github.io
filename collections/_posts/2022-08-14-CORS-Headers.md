@@ -26,7 +26,7 @@ You can loosen the restrictions of SOP and let other sites access your resources
 
 To help understand the concepts in this article, you should already be familiar with:
 - [How the web works: HTTP requests & responses]({{ site.baseurl }}/How-The-Web-Works){:target="_blank"}
-- [Basic understanding of Javascript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
+- [Basic understanding of JavaScript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
 - [Same Origin Policy]({{ site.baseurl }}/Same-Origin-Policy){:target="_blank"}
 
 ---
@@ -45,7 +45,7 @@ There are 6 response headers you can use to allow cross-origin access to your re
 - **Access-Control-Allow-Origin** **_{required}_**
 	- Which origins are allowed to access this resource?
 - **Access-Control-Expose-Headers**
-	- Which response headers can Javascript read?
+	- Which response headers can JavaScript read?
 - **Access-Control-Max-Age**
 	- How long with the results of a preflight request be cached?
 - **Access-Control-Allow-Credentials**
@@ -112,7 +112,7 @@ This attribute can introduce some very damaging security vulnerabilities for you
 
 A couple of things to consider when you set this header:
 - **The `Access-Control-Allow-Origin` value must be _a single origin or `null`_**
-	- If you set `Access-Control-Allow-Origin: *` and require credentials, the browser will not let Javascript read the HTTP response and it will report a CORS error in the console
+	- If you set `Access-Control-Allow-Origin: *` and require credentials, the browser will not let JavaScript read the HTTP response and it will report a CORS error in the console
 - **SameSite attribute on the cookie still applies**
 	- If the `SameSite` attribute on the cookie is set to `Lax` or `Strict`, the browser will not include the cookie in the cross-origin HTTP request, even if you set `Access-Control-Allow-Credentials: true`
 	- Learn more about the [`SameSite` attribute for cookies in this article]({{ site.baseurl }}/tutorials/Understanding-Cookies-Part-7/)

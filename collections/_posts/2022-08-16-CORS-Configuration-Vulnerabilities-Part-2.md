@@ -26,7 +26,7 @@ In this article we'll discuss the other situations you should be aware of where 
 
 To help understand the concepts in this article, you should already be familiar with:
 - [How the web works: HTTP requests & responses]({{ site.baseurl }}/How-The-Web-Works){:target="_blank"}
-- [Basic understanding of Javascript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
+- [Basic understanding of JavaScript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
 - [Same Origin Policy]({{ site.baseurl }}/Same-Origin-Policy){:target="_blank"}
 - [Cross-Origin Resource Sharing headers]({{ site.baseurl }}/CORS-Headers){:target="_blank"}
 
@@ -52,7 +52,7 @@ This last option - **a sandboxed cross-origin request** - is the easiest way for
 
 ### Sandbox attack
 
-If an attacker can get a logged in user of your app to visit their malicious site, they can trigger a cross-origin request using Javascript from a sandboxed iframe. This can cause the `Origin` to be set to `null` by the browser.
+If an attacker can get a logged in user of your app to visit their malicious site, they can trigger a cross-origin request using JavaScript from a sandboxed iframe. This can cause the `Origin` to be set to `null` by the browser.
 
 To see the code that can trigger this attack, visit [Portswigger's article on CORS](https://portswigger.net/web-security/cors#whitelisted-null-origin-value){:target="_blank"}.
 
@@ -89,9 +89,9 @@ One last note to touch on - even if you implement CORS properly, **any origin yo
 
 For example, let's say you trust `vulnerable-example.com` but you didn't know it has some pretty serious [Cross-Site Scripting (XSS)]({{ site.baseurl }}/owasp-top-10/Cross-Site-Scripting/) vulnerabilities.
 
-An attacker knows this and has stored some malicious Javascript to perform CSRF attacks in `vulnerable-example.com`.
+An attacker knows this and has stored some malicious JavaScript to perform CSRF attacks in `vulnerable-example.com`.
 
-One of your users is logged into your site. Then they open a new tab and visit `vulnerable-example.com`. The stored XSS is triggered and the attacker retrieves the anti-CSRF tokens for your 'Change Password' page. The attacker's Javascript then uses those same tokens to change the user's password and takes over their account.
+One of your users is logged into your site. Then they open a new tab and visit `vulnerable-example.com`. The stored XSS is triggered and the attacker retrieves the anti-CSRF tokens for your 'Change Password' page. The attacker's JavaScript then uses those same tokens to change the user's password and takes over their account.
 
 Granted, this is just an example and attacks are not always simple and straight forward. But attackers are clever and persistent, especially when they're motivated. 
 

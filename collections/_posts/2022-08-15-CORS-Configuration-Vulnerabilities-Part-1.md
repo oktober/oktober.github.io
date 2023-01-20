@@ -26,7 +26,7 @@ If not done properly, then security vulnerabilities can easily arise and attacke
 
 To help understand the concepts in this article, you should already be familiar with:
 - [How the web works: HTTP requests & responses]({{ site.baseurl }}/How-The-Web-Works){:target="_blank"}
-- [Basic understanding of Javascript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
+- [Basic understanding of JavaScript {Mozilla}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide){:target="_blank"}
 - [Same Origin Policy]({{ site.baseurl }}/Same-Origin-Policy){:target="_blank"}
 - [Cross-Origin Resource Sharing headers]({{ site.baseurl }}/CORS-Headers){:target="_blank"}
 
@@ -40,9 +40,9 @@ To understand the types of attacks that are used with CORS vulnerabilities, you 
 On a high level, a CSRF attack occurs when: 
 - a user is logged into a legitimate website (Website A)
 - user then visits a malicious website (Website B) 
-- malicious website B has Javascript that automatically runs to submit a GET or POST request to website A, acting as the user
+- malicious website B has JavaScript that automatically runs to submit a GET or POST request to website A, acting as the user
 
-If Website A is not designed securely, the Javascript on Website B could perform actions as the user, such as submitting an HTTP request to change the user's password and take over their account.
+If Website A is not designed securely, the JavaScript on Website B could perform actions as the user, such as submitting an HTTP request to change the user's password and take over their account.
 
 **This is all valid behavior _even with SOP_**. But, SOP doesn't allow the attacker to read the HTTP response. It's a blind attack. They can submit the GET or POST request, but they can't read the response.
 

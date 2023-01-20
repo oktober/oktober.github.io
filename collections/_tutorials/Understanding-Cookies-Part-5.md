@@ -66,20 +66,20 @@ Set-Cookie: authorized=LargeRandomNonce; Path=/account/;
 
 Cookies will now only be attached to requests for the `/account/` path and its sub-directories.
 
-The attacker can't get the cookie sent to them in an HTTP request because they control a different path. However, they might be able to read that cookie using iframes and Javascript.
+The attacker can't get the cookie sent to them in an HTTP request because they control a different path. However, they might be able to read that cookie using iframes and JavaScript.
 
 For example, the attacker could:
 
 1. create a web page at `example.com/legacy/accountDetails.html`
 2. add an iframe to this webpage that loads `example.com/account/userProfile.html`
 3. lure a logged in user to visit the malicious webpage (`accountDetails.html`)
-4. use Javascript to read the iframe's cookie using `contentDocument.cookie`
+4. use JavaScript to read the iframe's cookie using `contentDocument.cookie`
 
 _Read more about [this type of attack at mozilla.org](https://developer.mozilla.org/en-US/docs/web/api/document/cookie#security){:target="_blank"}._
 
-This is possible because both the webpage and iframe exist on the same origin (`http://example.com:80`) and we haven't disabled Javascript from reading the cookie.
+This is possible because both the webpage and iframe exist on the same origin (`http://example.com:80`) and we haven't disabled JavaScript from reading the cookie.
 
-To prevent this attack, you'd need to add the `HttpOnly` attribute to your cookie, which prevents Javascript from accessing a cookie. We'll discuss this attribute more in Part 6.
+To prevent this attack, you'd need to add the `HttpOnly` attribute to your cookie, which prevents JavaScript from accessing a cookie. We'll discuss this attribute more in Part 6.
 
 `Path` is a useful attribute, but should not be relied on solely for security. It's just one tool that should be combined with others to help increase the usability and security of your cookies.
 

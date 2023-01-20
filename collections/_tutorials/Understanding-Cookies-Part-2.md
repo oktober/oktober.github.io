@@ -32,7 +32,7 @@ If you set a cookie like this, with no attributes, it will:
 	- For example, if the cookie was set by `http://example.com/account`, then it will be sent when you visit `http://example.com/account/home`
 	- However, it will NOT be sent when you visit `http://example.com/blog` because it's a different path
 - be sent over HTTP and HTTPS
-- be accessible using Javascript
+- be accessible using JavaScript
 - be attached to a resource included in a third-party (different) site
 
 ---

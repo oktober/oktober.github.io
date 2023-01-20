@@ -108,7 +108,7 @@ Ultimately, it comes down to what the user does.
 If the user does any of these things, an HTTP request will be sent:
 - Clicking a link
 - Submitting a form
-- Clicking on an element that signals to Javascript to take one of those actions above or perform a redirect *(i.e. send you to a different webpage)*
+- Clicking on an element that signals to JavaScript to take one of those actions above or perform a redirect *(i.e. send you to a different webpage)*
 
 These are all fairly noticeable as a user because when they happen, the page reloads.
 
@@ -116,14 +116,14 @@ However, there are ways to send HTTP requests that won't trigger a page reload. 
 
 ### Asynchronous requests
 
-Asynchronous means doing multiple things at the same time. Even though the browser has already loaded the webpage, that doesn't mean it stops doing things. As long as you've got a browser tab open, the browser is waiting for you, or Javascript code in the web page, to do something.
+Asynchronous means doing multiple things at the same time. Even though the browser has already loaded the webpage, that doesn't mean it stops doing things. As long as you've got a browser tab open, the browser is waiting for you, or JavaScript code in the web page, to do something.
 
 If something happens (also known as an "event"), the browser responds.
 
 For example,
-- You could click on a button that triggers Javascript to send a form
-- After the entire page is loaded, Javascript could trigger an event to fetch another resource
-- Javascript could go fetch and load another video ad after the current one finishes playing
+- You could click on a button that triggers JavaScript to send a form
+- After the entire page is loaded, JavaScript could trigger an event to fetch another resource
+- JavaScript could go fetch and load another video ad after the current one finishes playing
 
 These are all examples of events that happen asynchronously. They don't require a reload of the page. They just happen in the background and you can still see them on the Network Monitor (or similar tool for other browsers).
 

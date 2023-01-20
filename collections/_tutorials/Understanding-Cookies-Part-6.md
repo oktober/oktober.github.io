@@ -40,7 +40,7 @@ If you set `Secure` on your sensitive cookies, a user caught in a downgrade atta
 
 ## `HttpOnly`
 
-In [Part 5]({% link _tutorials/Understanding-Cookies-Part-5.md %}), we discussed an attack where Javascript was used to read the cookie.
+In [Part 5]({% link _tutorials/Understanding-Cookies-Part-5.md %}), we discussed an attack where JavaScript was used to read the cookie.
 
 To prevent that attack, and others like it, you should set the `HttpOnly` attribute, like so:
 
@@ -48,7 +48,7 @@ To prevent that attack, and others like it, you should set the `HttpOnly` attrib
 Set-Cookie: cookieName=cookieValue; HttpOnly;
 ```
 
-This will only allow the cookies to be accessed through an HTTP request. Attacks using Javascript or the client's hard disk will not have access to user cookies.
+This will only allow the cookies to be accessed through an HTTP request. Attacks using JavaScript or the client's hard disk will not have access to user cookies.
 
 `HttpOnly` is an excellent mitigation tool and should be implemented if possible.
 

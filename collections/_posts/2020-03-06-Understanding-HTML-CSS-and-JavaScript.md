@@ -13,7 +13,7 @@ image-alt: Computer screen showing HTML code
 
 Since the internet exploded across the globe, technology has grown and chanced immensely. But the foundations and the specific elements in the technology largely remains the same.
 
-For web pages, those foundational technologies are HTML, CSS, and Javascript. Why do we use all 3 and what is the intrinsic purpose of each?
+For web pages, those foundational technologies are HTML, CSS, and JavaScript. Why do we use all 3 and what is the intrinsic purpose of each?
 
 <!--more-->
 
