@@ -14,13 +14,15 @@ Some examples of my code and the different languages/frameworks I've used:
     - [Cash Register](https://github.com/oktober/javascript-practice/blob/main/freecodecamp/cash-register.js){:target="_blank"}
 
 ### Jekyll
-- The site you're on was built with Jekyll using [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"} by Barry Clark. I've customized it (by adding collections, updating CSS, etc) to become the site you see here.
-    - [staciefarmer.com](https://github.com/oktober/oktober.github.io){:target="_blank"}
+- [staciefarmer.com](https://github.com/oktober/oktober.github.io){:target="_blank"}
+    - The site you're on was built with Jekyll using [Jekyll Now](https://github.com/barryclark/jekyll-now){:target="_blank"} by Barry Clark. I've customized it (by adding collections, updating CSS, etc) to become the site you see here.
 
 ### Laravel
-- To better understand Laravel, I built a mostly functional RSS Reader app. Currently you can add a new site (to pull an RSS feed from), view all the posts from that feed, and edit the site's name and URL.
-    - [RSS Reader App w/Laravel 9](https://github.com/oktober/laravel-rss-9){:target="_blank"}
-    - [RSS Reader App w/Laravel 7](https://github.com/oktober/laravel-rss-7){:target="_blank"}
+- [Feed Reader App w/Laravel 9](https://github.com/oktober/laravel-rss-9){:target="_blank"}
+    - With this app, you can: 
+        - add a new site and it will automatically find and import the feed.
+        - edit the site's name or delete a feed.
+        - also read the entire post in the app, if the feed allows it.
 
 ### Python
 - FreeCodeCamp's [Scientific Computing with Python course](https://www.freecodecamp.org/learn/scientific-computing-with-python/){:target="_blank"} projects:
@@ -32,6 +34,11 @@ Some examples of my code and the different languages/frameworks I've used:
 - LeetCode Practice:
     - [My Solution Code](https://github.com/oktober/python-practice/tree/main/leet-code){:target="_blank"}
 
+### React
+- [Basic Quiz App](https://github.com/oktober/react-quiz-app){:target="_blank"}
+    - In this basic quiz app, you can add as many questions as you'd like to the JS array. 
+    - Once you've answered all the questions in the quiz, it will show your results.
+
 ### WordPress
-- To learn how to build a WordPress plugin, I built this very simple one that grabs a random quote from the [Stoic Quotes API](https://stoicquotesapi.com/){:target="_blank"} and displays it in the admin area
-    - [Daily Stoic Quotes Plugin](https://github.com/oktober/daily-stoic-quotes){:target="_blank"}
+- [Daily Stoic Quotes Plugin](https://github.com/oktober/daily-stoic-quotes){:target="_blank"}
+    - To learn how to build a WordPress plugin, I built this very simple one that grabs a random quote from the [Stoic Quotes API](https://stoicquotesapi.com/){:target="_blank"} and displays it in the admin area
