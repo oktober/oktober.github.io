@@ -6,35 +6,62 @@ title: OWASP Top Ten
 <h1>OWASP Top 10</h1>
 <hr>
 
-<h2>2021 Top Ten Web Application Security Risks</h2>
-<a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP's official 2021 Top Ten list</a>
-<ol>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Access-Control">Broken Access Control</a> - Moved up to #1 from #4 in 2017</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Cryptographic-Failures">Cryptographic Failures</a> - previously known as 'Sensitive Data Exposure'</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Injection">Injection</a> - Moved down from #1 in 2017, also encompasses <a href="{{ site.baseurl }}/owasp-top-10/Cross-Site-Scripting">XSS</a> now</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Insecure-Design">Insecure Design</a> - new category for 2021</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Misconfiguration">Security Misconfiguration</a> - combined with <a href="{{ site.baseurl }}/owasp-top-10/XML-External-Entities">XXE</a> for 2021</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Vulnerable-And-Outdated-Components">Vulnerable and Outdated Components</a> - previously known as 'Using Components with Known Vulnerabilities</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Identification-And-Authentication-Failures">Identification and Authentication Failures</a> - previously known as 'Broken Authentication'</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Software-And-Data-Integrity-Failures">Software and Data Integrity Failures</a> - encompasses <a href="{{ site.baseurl }}/owasp-top-10/Insecure-Deserialization">Insecure Deserialization</a> for 2021</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Logging-And-Monitoring-Failures">Security Logging and Monitoring Failures</a> - previously known as 'Insufficient Logging & Monitoring'</li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Server-Side-Request-Forgery">Server-Side Request Forgery (SSRF)</a> - newly added to the top ten in 2021</li>
-</ol>
+<div class="top-ten-list">
+  <h2>2021 Top Ten Web Application Security Risks</h2>
+  <p class="top-ten-link small"><a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP's official 2021 Top Ten list</a></p>
+  <ol>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Access-Control">Broken Access Control</a>
+      <ul><li>moved up to #1 from #4 in 2017</li></ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Cryptographic-Failures">Cryptographic Failures</a>
+      <ul><li>previously known as <span class="italic">Sensitive Data Exposure</span></li></ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Injection">Injection</a>
+      <ul>
+        <li>moved down from #1 in 2017</li>
+        <li>also encompasses <a href="{{ site.baseurl }}/owasp-top-10/Cross-Site-Scripting">XSS</a> now</li>
+      </ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Insecure-Design">Insecure Design</a>
+      <ul><li>new category for 2021</li></ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Misconfiguration">Security Misconfiguration</a>
+      <ul><li>combined with <a href="{{ site.baseurl }}/owasp-top-10/XML-External-Entities">XXE</a> for 2021</li></ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Vulnerable-And-Outdated-Components">Vulnerable and Outdated Components</a>
+      <ul><li>previously known as <span class="italic">Using Components with Known Vulnerabilities</span></li></ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Identification-And-Authentication-Failures">Identification and Authentication Failures</a>
+      <ul><li>previously known as <span class="italic">Broken Authentication</span></li></ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Software-And-Data-Integrity-Failures">Software and Data Integrity Failures</a>
+      <ul><li>encompasses <a href="{{ site.baseurl }}/owasp-top-10/Insecure-Deserialization">Insecure Deserialization</a> for 2021</li></ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Logging-And-Monitoring-Failures">Security Logging and Monitoring Failures</a>
+      <ul><li>previously known as <span class="italic">Insufficient Logging & Monitoring</span></li></ul>
+    </li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Server-Side-Request-Forgery">Server-Side Request Forgery (SSRF)</a>
+      <ul><li>newly added to the top ten in 2021</li></ul>
+    </li>
+  </ol>
+</div>
 
 
-<hr>
+<hr class="top-ten-hr">
 
-<h2>2017 Top Ten Web Application Security Risks</h2>
-<a href="https://owasp.org/www-project-top-ten/2017/" target="_blank">OWASP's official 2017 Top Ten list</a>
-<ol>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Injection">Injection</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Authentication">Broken Authentication</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Sensitive-Data-Exposure">Sensitive Data Exposures</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/XML-External-Entities">XML External Entities (XXE)</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Access-Control">Broken Access Control</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Misconfiguration">Security Misconfiguration</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Cross-Site-Scripting">Cross-Site Scripting (XSS)</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Insecure-Deserialization">Insecure Deserialization</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Using-Components-With-Known-Vulnerabilities">Using Components with Known Vulnerabilities</a></li>
-  <li><a href="{{ site.baseurl }}/owasp-top-10/Insufficient-Logging-And-Monitoring">Insufficient Logging & Monitoring</a></li>
-</ol>
+<div class="top-ten-list">
+  <h2>2017 Top Ten Web Application Security Risks</h2>
+  <p class="top-ten-link small"><a href="https://owasp.org/www-project-top-ten/2017/" target="_blank">OWASP's official 2017 Top Ten list</a></p>
+  <ol>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Injection">Injection</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Authentication">Broken Authentication</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Sensitive-Data-Exposure">Sensitive Data Exposures</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/XML-External-Entities">XML External Entities (XXE)</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Broken-Access-Control">Broken Access Control</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Security-Misconfiguration">Security Misconfiguration</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Cross-Site-Scripting">Cross-Site Scripting (XSS)</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Insecure-Deserialization">Insecure Deserialization</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Using-Components-With-Known-Vulnerabilities">Using Components with Known Vulnerabilities</a></li>
+    <li><a href="{{ site.baseurl }}/owasp-top-10/Insufficient-Logging-And-Monitoring">Insufficient Logging & Monitoring</a></li>
+  </ol>
+</div>

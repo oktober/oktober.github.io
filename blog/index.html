@@ -7,19 +7,21 @@ title: Blog
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <article class="post">
+    <article class="post-listing">
         <div class="thumbnail">
           <a href="{{ site.baseurl }}{{ post.url }}" class="thumbnail"><img src="/assets/images{{ post.thumbnail }}" alt="{{ vuln.image-alt }}"></a>
           <span class="thumbnail-attribution">Photo by <a href="{{ post.thumbnail-creator-link }}" target="_blank">{{ post.thumbnail-creator }}</a> on <a href="{{ post.thumbnail-site }}" target="_blank">{{ post.thumbnail-site-name }}</a></span>
         </div>
 
-        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="post-info">
+          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-        <div class="entry">
-          {{ post.excerpt }}
+          <div class="entry">
+            {{ post.excerpt }}
+            <p><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></p>
+          </div>
+
         </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>

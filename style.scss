@@ -20,12 +20,12 @@ html {
 body {
 	background: $white;
   color: $darkGray;
-  font: 1.1em/1.4 $helvetica;
+  font: 1.1rem/1.4 $serif;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
 }
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-family: $helveticaNeue;
   font-weight: 700;
-  margin: 0.5em 0;
+  // margin: 0.5em 0;
   padding: 0;
 
   @include mobile {
@@ -42,24 +42,34 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
-  font-size: 1.7em;
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+  color: inherit;
+  text-decoration: none;
+}
 
-  a {
-    color: inherit;
-  }
+h1 {
+  font-size: 2rem;
+  margin-top: 1.2rem;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.17rem;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
 }
 
 p {
@@ -69,21 +79,17 @@ p {
 a {
   color: $blue;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
 
-  &:hover, &:active {
+  &:hover, &:active, &:focus {
     color: $blue;
+    text-decoration: underline;
   }
 }
 
 ul, ol {
   margin: 0.95rem 0;
   padding-left: 1.7rem;
-
-  @include mobile-sm {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 ul {
@@ -169,16 +175,19 @@ th {
 /*********************/
 
 //
-// .masthead
+// MASTHEAD
 //
+
+.wrapper-masthead {
+  background: $lightGray;
+  border-bottom: 1px solid $mediumGray;
+  border-top: 1px solid $mediumGray;
+  // margin-top: 50px;
+}
 
 .masthead {
   border-bottom: 1px solid $lightGray;
   padding: 1rem 0;
-
-  a {
-    text-decoration: none;
-  }
 
   @include mobile {
     text-align: center;
@@ -209,53 +218,68 @@ th {
     float: none;
     display: block;
     margin: 0 auto;
+    width: 280px;
   }
 }
 
 .site-name {
   color: $darkGray;
   cursor: pointer;
-  font: 300 1.6em/1.4 $defaultHeadingFont;
+  font: 300 1.7rem/1.4 $helveticaNeue;
   letter-spacing: 1px;
   margin: 0;
 }
 
 .site-description {
   color: $gray;
-  font-size: 0.95em;
-  margin: -5px 0 0 0;
+  font: 300 0.9rem/0.9 $helveticaNeue;
+  letter-spacing: 0.08rem;
+  margin: 5px 0 0 0;
 }
 
 #menu {
   float: right;
-  font-family: $defaultHeadingFont;
-  margin-top: 1rem;
+  font: 300 0.9rem/0.9 $helveticaNeue;
+  letter-spacing: 0.08rem;
+  margin-top: 1.2rem;
   text-align: right;
 
   @include mobile {
     float: none;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    width: 280px;
+  }
+
+  @include mobile-sm {
+    width: 100%;
   }
 
   .nav {
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .nav li {
     float: left;
     position: relative;
   }
-  .nav li:not(:last-child){
-    margin-right: 10px;
+  .nav li.top-level:not(:last-child){
+    margin-right: 25px;
+
+    @include mobile {
+      margin-right: 5px;
+    }
   }
 
   .nav a {
-    border: 1px solid $white;
     color: $darkGray;
     display: block;
-    padding: 0.5rem;
+    padding: 8px;
     text-decoration: none;
   }
   .nav a:hover {
@@ -265,6 +289,8 @@ th {
   /*--- DROPDOWN ---*/
   .nav ul {
     background: $lightGray;
+    border: 1px solid $mediumGray;
+    border-radius: 5px;
     list-style: none;
     min-width: 100%;
     padding-left: 0;
@@ -275,25 +301,17 @@ th {
   }
   .nav ul li {
     float: none;
-    margin-right: 0;
   }
   .nav ul a {
     border: 0;
-    font-size: 0.9rem;
+    font: 300 0.8rem/0.9 $helveticaNeue;
+    letter-spacing: 0.08rem;
     text-align: left;
     white-space: nowrap;
   }
   .nav li:hover ul {
     /* Brings the dropdown back on screen */
     left: 0;
-
-    /* Don't show dropdowns for really small screens */
-    @include mobile {
-      left: -9999px;
-    }
-    @include mobile-sm {
-      left: -9999px;
-    }
   }
   .nav li:hover a {
     text-decoration: underline
@@ -306,8 +324,163 @@ th {
   }
 }
 
-hr.home {
-  margin: 1.8rem 0;
+//
+// MAIN SECTION
+//
+.main {
+  ol > li:not(:first-child), 
+  ul > li:not(:first-child) {
+    margin-top: 1.2rem;
+  }
+  
+  ol ul > li:not(:first-child),
+  ul ul > li:not(:first-child) {
+    margin-top: 0.2rem;
+  }
+}
+
+//
+// HOME
+//
+.home {
+  @include mobile {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1:not(:first-child) {
+    margin-top: 2.3rem;
+  }
+  
+  .article-list {
+    margin-top: 1rem;
+  }
+  
+  .article-list h2 {
+    font-size: 1.35rem;
+    font-weight: 500;
+  }
+  
+  hr {
+    margin-top: 2.3rem;
+  }
+
+}
+
+//
+// TUTORIALS
+//
+
+div.tutorials {
+  margin-top: 1.8rem;
+}
+
+li.tutorial {
+  margin-left: 1rem;
+}
+
+//
+// BLOG
+//
+
+.posts {
+
+  .post-listing {
+    display: flex;
+    border-bottom: 1px solid $lightGray;
+    /* Need minimum height for posts without much intro text */
+    min-height: 320px;
+    padding-bottom: 1.3rem;
+    margin-top: 2rem;
+  
+    @include mobile-sm {
+      flex-direction: column;
+    }
+  
+    .thumbnail {
+      margin-right: 0.8rem;
+      min-width: 35%;
+      margin-top: 0.5rem;
+  
+      @include mobile {
+        min-width: 35%;
+      }
+  
+      @include mobile-sm {
+        margin-top: 0;
+      }
+      
+      .thumbnail-attribution {
+        display: block;
+      }
+    }
+
+    .post-info {
+      margin-top: 0;
+  
+      @include mobile-sm {
+        margin-top: 1rem;
+      }
+
+      .entry {
+        line-height: 1.8rem;
+
+        p {
+          margin-top: 1.8rem;
+          margin-bottom: 0;
+        }
+      
+        ul ul{
+          margin-bottom: 0.3rem;
+        }
+      
+        hr {
+          margin: 1.8em 0;
+        }
+      
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.post {
+
+  .post-title {
+    margin-bottom: 0;
+  
+    @include mobile-sm {
+      // line-height: 1;
+    }
+  }
+
+  hr {
+    margin: 1.8em 0;
+  }
+
+  blockquote {
+    border-left: 2px solid $gray;
+    color: $gray;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 1em .8em;
+    padding: 0.1em 1em;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+  }
+
+  li p {
+    line-height: 1.5;
+  }
 }
 
 .toc {
@@ -327,87 +500,12 @@ hr.home {
 
   @include mobile {
     max-width: 55%;
+    margin-top: 0.7rem;
   }
 
   @include mobile-sm {
     max-width: 100%;
-  }
-}
-
-//
-// tutorials
-//
-
-div.tutorials {
-  margin-top: 1.8rem;
-}
-
-//
-// blog
-//
-
-.post {
-  border-bottom: 1px solid $lightGray;
-  /* Need minimum height for posts without much intro text */
-  min-height: 320px;
-  padding-bottom: 2em;
-
-  .thumbnail {
-    float: left;
-    margin-right: 0.8rem;
-
-    @include mobile {
-      float: none;
-      margin-top: 2.5rem;
-    }
-    
-    .thumbnail-attribution {
-      display: block;
-    }
-  }
-
-  .post-title {
-    line-height: 1;
-    margin-bottom: 0;
-  }
-
-  h2 {
-    margin-bottom: 0;
-  }
-
-  blockquote {
-    border-left: 2px solid $gray;
-    color: $gray;
-    font-size: 1.2em;
-    font-style: italic;
-    margin: 1em .8em;
-    padding: 0.1em 1em;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-  }
-}
-
-.entry {
-  p:first-child {
-    margin-top: 0;
-  }
-
-  ul ul{
-    margin-bottom: 0.3rem;
-  }
-
-  hr {
-    margin: 1.8em 0;
-  }
-
-  img {
-    display: block;
+    margin: 1rem 0 2rem 0;
   }
 }
 
@@ -417,9 +515,19 @@ div.tutorials {
   margin-top: 1.6em;
   min-width: 320px;
 
+  @include mobile-sm {
+    min-width: 265px;
+  }
+
   .page_number {
     margin: 1.1rem 0;
     min-width: 100px;
+
+    @include mobile-sm {
+      font-size: 0.9rem;
+      margin: 0.7rem 0;
+      min-width: 75px;
+    }
   }
 
   .previous, .next {
@@ -431,11 +539,17 @@ div.tutorials {
     padding: 1.1rem 1.2rem;
     text-align: center;
     width: 115px;
+
+    @include mobile-sm {
+      font-size: 0.9rem;
+      width: 90px;
+      padding: 0.7rem 0.3rem;
+    }
   }
 }
 
 //
-// OWASP Top 10
+// 3-column Image + Title (for posts)
 //
 
 .article-list {
@@ -447,7 +561,7 @@ div.tutorials {
 
 .article-link, .filler {
   height: 100%;
-  width: 270px;
+  width: 245px;
 
   @include mobile {
     width: 100%;
@@ -485,15 +599,23 @@ div.tutorials {
 }
 
 //
-// tutorials
+// OWASP TOP TEN
 //
 
-li.tutorial {
-  margin-left: 1rem;
+.top-ten-list, .top-ten-hr {
+  margin-top: 1.5rem;
+}
+
+.top-ten-list ol ul {
+  font-size: 1rem;
+}
+
+.top-ten-link {
+  margin-top: 0.8rem;
 }
 
 //
-// talks
+// TALKS
 //
 
 .talks {
@@ -506,7 +628,7 @@ li.tutorial {
 
   h3 {
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
 
   p {
@@ -514,8 +636,9 @@ li.tutorial {
   }
 
   .presented {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: italic;
+    margin-top: 0.3rem;
   }
 
   li:not(:last-child) {
@@ -524,8 +647,16 @@ li.tutorial {
   }
 }
 
+.small {
+  font-size: 0.9rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
 //
-// footer
+// FOOTER
 //
 
 .wrapper-footer {
@@ -538,6 +669,21 @@ li.tutorial {
 footer {
   padding: 20px 0;
   text-align: center;
+  font-family: $helveticaNeue;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .footer-text {
+  font-size: 0.8rem;
+
+  @include mobile-sm {
+    max-width: 175px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

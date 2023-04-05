@@ -2,32 +2,36 @@
 layout: default
 ---
 
-<h1>Featured Posts</h1>
+<div class="home">
 
-<div class="article-list">
-  {% for post in site.tags.featured %}
-    <div class="article-link">
+  <h1>Featured Posts</h1>
 
-      <a href="{{ post.url }}" class="thumbnail"><img src="/assets/images{{ post.thumbnail }}" alt="{{ post.image-alt }}"></a>
-      <span class="thumbnail-attribution">Photo by <a href="{{ post.thumbnail-creator-link }}" target="_blank">{{ post.thumbnail-creator }}</a> on <a href="{{ post.thumbnail-site }}" target="_blank">{{ post.thumbnail-site-name }}</a></span>
-      <h2 class="article-link-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    </div>
+  <div class="article-list">
+    {% for post in site.tags.featured %}
+      <div class="article-link">
+
+        <a href="{{ post.url }}" class="thumbnail"><img src="/assets/images{{ post.thumbnail }}" alt="{{ post.image-alt }}"></a>
+        <span class="thumbnail-attribution">Photo by <a href="{{ post.thumbnail-creator-link }}" target="_blank">{{ post.thumbnail-creator }}</a> on <a href="{{ post.thumbnail-site }}" target="_blank">{{ post.thumbnail-site-name }}</a></span>
+        <h2 class="article-link-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </div>
+    {% endfor %}
+  </div>
+
+  <hr>
+
+  <h1>Featured Tutorials</h1>
+
+  <div class="article-list">
+  {% for tutorial in site.tutorials reversed %}
+    {% if tutorial.tags contains "overview" %}
+      <div class="article-link">
+
+        <a href="{{ tutorial.url }}" class="thumbnail"><img src="/assets/images{{ tutorial.thumbnail }}" alt="{{ tutorial.image-alt }}"></a>
+        <span class="thumbnail-attribution">Photo by <a href="{{ tutorial.thumbnail-creator-link }}" target="_blank">{{ tutorial.thumbnail-creator }}</a> on <a href="{{ tutorial.thumbnail-site }}" target="_blank">{{ tutorial.thumbnail-site-name }}</a></span>
+        <h2 class="article-link-title"><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h2>
+      </div>
+    {% endif %}
   {% endfor %}
-</div>
+  </div>
 
-<hr class="home">
-
-<h1>Featured Tutorials</h1>
-
-<div class="article-list">
-{% for tutorial in site.tutorials reversed %}
-  {% if tutorial.tags contains "overview" %}
-    <div class="article-link">
-
-      <a href="{{ tutorial.url }}" class="thumbnail"><img src="/assets/images{{ tutorial.thumbnail }}" alt="{{ tutorial.image-alt }}"></a>
-      <span class="thumbnail-attribution">Photo by <a href="{{ tutorial.thumbnail-creator-link }}" target="_blank">{{ tutorial.thumbnail-creator }}</a> on <a href="{{ tutorial.thumbnail-site }}" target="_blank">{{ tutorial.thumbnail-site-name }}</a></span>
-      <h2 class="article-link-title"><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h2>
-    </div>
-  {% endif %}
-{% endfor %}
 </div>

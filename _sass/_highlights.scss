@@ -11,8 +11,11 @@ pre.highlight {
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-  background-color: #efefef;
+  font-family: source-code-pro, Menlo, Monaco, "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: -0.02rem;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .highlight .c { color: #586E75 } /* Comment */

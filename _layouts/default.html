@@ -21,7 +21,7 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="Picture of Stacie Farmer" /></a>
+          <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="Picture of Stacie Farmer" /></a> -->
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -30,13 +30,15 @@
 
           <nav id="menu">
             <ul class="nav">
-              <li><a href="{{ site.baseurl }}/owasp-top-10">OWASP Top 10</a></li>
-              <li><a href="{{ site.baseurl }}/tutorials">Tutorials</a>
+              <li class="top-level"><a href="{{ site.baseurl }}/">Home</a></li>
+              <li class="top-level"><a href="{{ site.baseurl }}/blog">Writing</a>
+                <ul>
+                  <li><a href="{{ site.baseurl }}/owasp-top-10">OWASP Top 10</a></li>
+                  <li><a href="{{ site.baseurl }}/tutorials">Tutorials</a></li>
+                  <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                </ul>
               </li>
-              <li class="top-level"><a href="{{ site.baseurl }}/talks">Talks</a>
-              </li>
-              <li class="top-level"><a href="{{ site.baseurl }}/blog">Blog</a>
-              </li>
+              <li class="top-level"><a href="{{ site.baseurl }}/talks">Talks</a></li>
               <li class="top-level"><a href="{{ site.baseurl }}/about">About</a>
                 <ul>
                   <li><a href="{{ site.baseurl }}/code">Code</a></li>
@@ -48,16 +50,16 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
+    <main class="main container">
       {{ content }}
-    </div>
+    </main>
 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
-          <br>
-          &copy; Stacie Farmer - 2023 - <a href="{{ site.baseurl }}/terms-privacy">Terms of Use/Privacy</a>
+          <p>{% include svg-icons.html %}</p>
+          
+          <p class="footer-text">&copy; Stacie Farmer - 2023 | <a href="{{ site.baseurl }}/terms-privacy">Terms of Use/Privacy</a></p>
         </footer>
       </div>
     </div>
