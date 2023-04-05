@@ -20,6 +20,8 @@ At it's foundation, it's actually a really basic concept - HTTP requests and res
 
 {% include toc.md %}
 
+---
+
 ## What Happens When You Visit a Website
 When you visit my website - staciefarmer.com - there's 2 very basic things happening: 
 1. An HTTP request gets sent by the browser

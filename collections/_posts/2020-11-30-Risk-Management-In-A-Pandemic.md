@@ -19,6 +19,8 @@ Since this risk is so in our faces right now, I thought it'd be fun to talk abou
 
 {% include toc.md %}
 
+---
+
 ## The 4 Risk Controls
 When learning about risk management, I was taught there are 4 ways to deal with it.
 
