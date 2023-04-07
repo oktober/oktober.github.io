@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Understanding CORS & Misconfiguration Vulnerabilities
-order: 1
-tags: understanding-cors overview
+order: 3
+tags: understanding-cors overview featured
 description: 
 date: 2022-08-24
 thumbnail: /post-thumbnails/2022-08-14-cors-headers-thumbnail.jpg

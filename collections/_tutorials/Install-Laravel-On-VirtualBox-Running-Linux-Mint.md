@@ -2,7 +2,7 @@
 layout: post
 title: How to Install Laravel on VM Running Linux Mint
 order: 1
-tags: mint-laravel overview
+tags: mint-laravel overview featured
 description: 
 date: 2020-09-26
 thumbnail: /tutorial-thumbnails/install-laravel-on-virtualbox-running-linux-mint-thumbnail.jpg

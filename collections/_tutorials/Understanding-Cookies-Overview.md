@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Understanding Cookies
-order: 1
-tags: understanding-cookies overview
+order: 2
+tags: understanding-cookies overview featured
 description: Cookies are complicated, but still commonly used for keeping users logged in to a site. Learn a little more about the nuances behind setting cookies and what you're really doing when you set that attribute.
 date: 2021-12-06
 thumbnail: /tutorial-thumbnails/understanding-cookies-thumbnail.jpg

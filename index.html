@@ -23,7 +23,7 @@ layout: default
 
   <div class="article-list">
   {% for tutorial in site.tutorials reversed %}
-    {% if tutorial.tags contains "overview" %}
+    {% if tutorial.tags contains "featured" %}
       <div class="article-link">
 
         <a href="{{ tutorial.url }}" class="thumbnail"><img src="/assets/images{{ tutorial.thumbnail }}" alt="{{ tutorial.image-alt }}"></a>
