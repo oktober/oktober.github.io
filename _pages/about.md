@@ -4,13 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Hi there, I'm Stacie! 
+Hi there, I'm Stacie!
 
 I'm a full stack developer who enjoys helping companies build & secure their web applications.
 
 ## Work
 
-I've worked on the back-end, building web applications from scratch or modifying an existing CMS. I've also had lots of experience on the front-end taking a PSD and creating a fully functioning web page from it. 
+I've worked on the back-end, building web applications from scratch or modifying an existing CMS. I've also had lots of experience on the front-end taking a PSD and creating a fully functioning web page from it.
 
 I enjoy diving deep and learning more about the networks and systems we build our applications on. I'm also obsessed with how we can better secure those applications and protect our data, customers, and businesses.
 
@@ -32,4 +32,4 @@ If you think I could help, <a href="https://www.linkedin.com/in/staciefarmer" ta
 
 ---
 
-[Want to see my code?]({{ site.baseurl }}{% link _pages/code.md %})
+[Want to see my code?]({{ site.baseurl }}{% link _pages/coding.md %})
